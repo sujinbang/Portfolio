@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
@@ -7,22 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* 아이콘 */
-.icon-white {
-width: 30px;
-height: 30px;
-vertical-align: middle;
-margin-right: 5px;
-filter: invert(1); /* 흰색 배경용: 아이콘 색 반전 */
-}
-
+/* 소셜 아이콘 */
 .social-icons {
 margin-top: 20px;
 }
 
 .social-icons a {
 display: inline-block;
-background-color: #070707;
+background-color: #827d80;
 color: white;
 border-radius: 50%;
 width: 60px;
@@ -36,8 +28,35 @@ transition: background-color 0.3s;
 }
 
 .social-icons a:hover {
-background-color: #d5e2df;
+background-color: #e2d5dd;
 }
+
+/* 모달 배경 */
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100vw; height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	}
+
+/* 모달 창 */
+.modal {
+background: white;
+padding: 20px;
+border-radius: 8px;
+width: 60%;
+text-align: center;
+box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+margin-top: 15px;
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -143,7 +162,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: 600;
 		color: #666;
 		line-height: 1.5em;
 	}
@@ -2279,8 +2298,8 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #d48dc3;
-				background-image: url("../../static/images/light-bulbs.jpg");
+				background-color: #a2a0a2;
+				background-image: url("../../static/images/.jpg");
 			}
 
 			#main > section.two {

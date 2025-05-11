@@ -22,7 +22,10 @@ def home():
 def serve_geojson():
     return send_from_directory('data', 'seoul.geojson')
 
+@app.route('/echarts')
+def echart():
 
+    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
