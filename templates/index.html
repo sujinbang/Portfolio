@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>방수진의 포트폴리오</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="static/css/main.css" />
@@ -29,8 +29,8 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Information</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">Project</span></a></li>
+								<li><a href="#information" id="portfolio-link"><span class="icon solid fa-th">Information</span></a></li>
+								<li><a href="#project" id="about-link"><span class="icon solid fa-user">Project</span></a></li>
 								<li><a href="#career" id="about-link"><span class="icon solid fa-user">Career</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
@@ -53,22 +53,31 @@
 						<div class="container">
 							<header>
 								<h2 class="alt">방 수 진</h2>
-								<h5>웹 개발 및 데이터 분석가 포트폴리오 입니다.<h5>
+								<br>
+								<h6>웹 개발 및 데이터 분석가 포트폴리오 입니다.</h6>
+								<br>
+								<div class="col-12">
+									<div class="social-icons">
+										<a href="https://github.com/sujinbang" target="_blank" title="GitHub">
+											<i class="fab fa-github"></i>
+										</a>
+										<a href="https://bbangya22.tistory.com" target="_blank" title="블로그">
+											<i class="fas fa-blog"></i>
+										</a>
+									</div>
+								</div>
+								<br>
+								<button onclick="">이력서 다운로드</button>
 							</header>
-
-
 
 							<!-- Font Awesome 아이콘 사용 -->
 							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-							<!-- <footer>
-								<a href="#portfolio" class="button scrolly">더 알아보기</a>
-							</footer> -->
 						</div>
 					</section>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
+				<!-- information -->
+					<section id="information" class="two">
 						<div class="container">
 
 							<header>
@@ -78,13 +87,11 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"></a>
 										<header>
 											<h3>연락처 : 01045068098</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 										<header>
 											<h3>이메일 : sjbang8098@gmail.com</h3>
 										</header>
@@ -92,13 +99,12 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 										<header>
 											<h3>학력 : 부경대학교</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+										<p class="image fit"></p>
 										<header>
 											<h3>전공 : 공간정보시스템공학과</h3>
 										</header>
@@ -106,13 +112,11 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 										<header>
 											<h3>위치 : 서울특별시</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
 											<h3>생년월일 : 1997년 8월 22일</h3>
 										</header>
@@ -126,108 +130,120 @@
 					</section>
 
 				<!-- Project -->
-					<section id="about" class="three">
+					<section id="project" class="three">
 						<div class="container">
 
 							<header>
 								<h2>Project</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<p class="image featured"></p>
 							
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"></a>
 										<header>
 											<h3>말하는 일기장</h3>
-											· Skills : koBERT, koNlpy, STT/TTS,<br>
-											<a href="https://speaking-diary.netlify.app/">https://speaking-diary.netlify.app/</a>
+											<hr>
+											<p class="project-content">
+												KoBERT 기반 문자열 분석을 통해 감정을 분석해주는<br> 말하는 일기장
+											</p>
 											<br>
-											<br>
-											<button onclick="openModal('modal1')">내부 페이지 열기</button>
+											<button onclick="openModal('modal1')">더 알아보기</button>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="" alt="" /></a>
 										<header>
 											<h3>포트폴리오 제작</h3>
+											<hr>
+											<p class="project-content">
+												포트폴리오 웹사이트
+											</p>
 											<br>
 											<br>
-											<button onclick="openModal('modal2')">내부 페이지 열기</button>
+											<button onclick="openModal('modal2')">더 알아보기</button>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="" alt="" /></a>
-										<header>
-											<h3>부산 관광 현황 분석</h3>
-											<br>
-											<br>
-											<button onclick="openModal('modal3')">내부 페이지 열기</button>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>이륜차 사고 정보 제공</h3>
-											· Skills : koBERT, koNlpy, STT/TTS,<br>
-											<a href="https://speaking-diary.netlify.app/">https://speaking-diary.netlify.app/</a>
-											<br>
-											<br>
-											<button onclick="openModal('modal4')">내부 페이지 열기</button>
-
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>echarts 함수 모음집</h3>
-											<br>
-											<br>
-											<button onclick="openModal('modal5')">내부 페이지 열기</button>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>문자열 유사도 분석</h3>
-											<br>
-											<br>
-											<button onclick="openModal('modal6')">내부 페이지 열기</button>
-										</header>
-									</article>
-								</div>
-
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
 										<header>
 											<h3>AIP/DRM 파일 보안 해제</h3>
-											· Skills : koBERT, koNlpy, STT/TTS, 
-											<a href="https://speaking-diary.netlify.app/">https://speaking-diary.netlify.app/</a>
+											<hr>
+											<p class="project-content">
+												사내 보안 정책으로 자동으로 잠기는 보안 파일에 대해<br> 보안 해제 기능 개발
+											</p>
 											<br>
+											<button onclick="openModal('modal3')">더 알아보기</button>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<header>
+											<h3>이륜차 사고 정보 제공</h3>
+											<hr>
+											<p class="project-content">
+												배달 수요 증가와 이륜차 사고의 연관성 분석 및 <br>
+												사고 다발 지점 정보 제공
+											</p>
 											<br>
-											<button onclick="openModal('modal7')">내부 페이지 열기</button>
+											<button onclick="openModal('modal4')">더 알아보기</button>
+
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>echarts 대시보드</h3>
+											<hr>
+											<p class="project-content">
+												echarts 라이브러리 기반으로 시각화에 <br> 주로 사용되는 차트 모음집
+											</p>
+											<br>
+											<button onclick="openModal('modal5')">더 알아보기</button>
+										</header>
+									</article>
+									<article class="item">
+										<header>
+											<h3>문자열 유사도 분석</h3>
+											<hr>
+											<p class="project-content">
+												TF-IDF + Word2Vec 기반 문자열 유사도 분석을 통한 <br>유사 사례 이슈 분석
+											</p>
+											<br>
+											<button onclick="openModal('modal6')">더 알아보기</button>
+										</header>
+									</article>
+								</div>
+
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<header>
+											<h3>부산 관광 현황 분석</h3>
+											<hr>
+											<p class="project-content">
+												부산 관광객 유치를 위해 전통시장 활성화 및 관광객을 위한 여행 정보 시각화를 목적으로 진행된 프로젝트
+											</p>
+											<br>
+											<button onclick="openModal('modal7')">더 알아보기</button>
+										</header>
+									</article>
+									<article class="item">
 										<header>
 											<h3>크롤러 개발</h3>
+											<hr>
+											<p class="project-content">
+												Selenium & BeautifulSoup 기반<br> 웹사이트 크롤링
+											</p>
 											<br>
-											<br>
-											<button onclick="openModal('modal8')">내부 페이지 열기</button>
+											<button onclick="openModal('modal8')">더 알아보기</button>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
 										<header>
 											<h3>ChatGPT API 활용 LLM/RAG 구현</h3>
+											<hr>
 											<br>
 											<br>
-											<button onclick="openModal('modal9')">내부 페이지 열기</button>
+											<button onclick="openModal('modal9')">더 알아보기</button>
 										</header>
 									</article>
 								</div>
@@ -238,69 +254,437 @@
 					<!-- 모달 HTML -->
 					<div class="modal-overlay" id="modal1">
 						<div class="modal">
-							<h5>말하는 일기장</h5>
-							<button class="close-btn" onclick="closeModal('modal1')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>말하는 일기장
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
+								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+
+									
+
+								<div class="page" id="page2">
+									<h2>페이지 2</h2>
+									<p>두 번째 페이지입니다.</p>
+								</div>
+								<div class="page" id="page3">
+									<h2>페이지 3</h2>
+									<p>세 번째 페이지입니다.</p>
+								</div>
+								<!-- <button onclick="prevPage()">이전</button>
+								<button onclick="nextPage()">다음</button> -->	
+
+								<button class="close-btn" onclick="closeModal('modal1')">닫기</button>
+
+							</div>
+
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal2">
 						<div class="modal">
-							<h5>포트폴리오 제작</h5>
-							<button class="close-btn" onclick="closeModal('modal2')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>포트폴리오 제작
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2025.00.00 ~ 2025.00.00 (1인 프로젝트)<br>
+								<a href="">📎 URL : 향후예정</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal2')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal3">
 						<div class="modal">
-							<h5>부산 관광 현황 분석</h5>
-							<button class="close-btn" onclick="closeModal('modal3')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>AIP/DRM 파일 보안 해제
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
+								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal3')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal4">
 						<div class="modal">
-							<h5>이륜차 사고 정보 제공</h5>
-							<button class="close-btn" onclick="closeModal('modal4')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>이륜차 사고 정보 제공
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (3인 프로젝트)<br>
+								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 배달 수요 증가와 이륜차 사고가 어떤 연관성이 있는지에 대한 아이디어로 시작하여 사고 다발 지점 정보를 제공하는 프로젝트 입니다.
+										EDA 기반의 데이터 분석 및 시각화를 진행하였으며. Scikit-learn 라이브러리를 활용하여 이륜차 사고와 배달 사용량을 T-검정으로 확인 후 다항회귀분석 및 상관관계 분석으로 연관성을 확인하였습니다.
+										분석 내용은 django를 활용하여 구현한 웹페이지에 이미지로 시각화하였으며, 배달 사용량이 가장 많은 서울지역을 대상으로 사고 다발 지점 정보를 제공하는 웹 페이지를 구현하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<div class="modal-summary">
+										<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/>
+
+										pandas, matplotlib, seaborn, folium, Scikit-learn, django, oracle
+									</div>
+									<br>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal4')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal5">
 						<div class="modal">
-							<h5>Echart 대시보드 입니다</h5>
-							<iframe src="/echarts" width="100%" height="600h6x"></iframe>
-							<button class="close-btn" onclick="closeModal('modal5')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>echarts 대시보드
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+									2025.00.00 ~ 2025.00.00 (1인 프로젝트)<br>
+									<a href="/echarts">📎 URL : echarts 대시보드 미리보기</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+
+								<button class="close-btn" onclick="closeModal('modal5')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal6">
 						<div class="modal">
-							<h5>문자열 유사도 분석</h5>
-							<button class="close-btn" onclick="closeModal('modal6')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>문자열 유사도 분석
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
+								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal6')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal7">
 						<div class="modal">
-							<h5>AIP/DRM 파일 보안 해제</h5>
-							<button class="close-btn" onclick="closeModal('modal7')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>부산 관광 현황 분석
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (3인 프로젝트)<br>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>🔍 Preview</h6>
+									<hr>
+									<iframe class="modal-preview" src="/Festival"></iframe>
+									<iframe class="modal-preview" src="/Market"></iframe>
+									<p class="modal-summary">Folium 활용 : 축제 현황(왼쪽), 시장 개수 및 현황(오른쪽)</p>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal7')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal8">
 						<div class="modal">
-							<h5>크롤러 개발</h5>
-							<button class="close-btn" onclick="closeModal('modal8')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>크롤러 개발
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
+								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal8')">닫기</button>
+							</div>
 						</div>
 					</div>
 					<div class="modal-overlay" id="modal9">
 						<div class="modal">
-							<h5>ChatGPT API 활용 LLM/RAG 구현</h5>
-							<button class="close-btn" onclick="closeModal('modal9')">닫기</button>
+							<div class="modal-content">
+								<div class="social-icons">
+									<h5>ChatGPT API 활용 LLM/RAG 구현
+									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+										<i class="fab fa-github"></i>
+									</a>
+									</h5>
+								</div>
+								<hr>
+								<div class="modal-date">
+								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
+								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								</div>
+								<br>
+								<div class="modal-title">
+									<h6>📌 Summary</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>💡 Background</h6>
+									<hr>
+									<div class="modal-summary">
+										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+									</div>
+									<br>
+									<h6>🔍 Meaning</h6>
+									<hr>
+									<h6>⛏ Skills</h6>
+									<hr>
+									<h6>⚙ Setup & Usage</h6>
+									<hr>
+								</div>
+								<button class="close-btn" onclick="closeModal('modal9')">닫기</button>
+							</div>
 						</div>
 					</div>
 
 					<!-- Career -->
-					<section id="career" class="three">
+					<section id="career" class="four">
 						<div class="container">
 
 							<header>
 								<h2>Career</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<div class="image featured"></div>
 
 							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
 							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
@@ -359,7 +743,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2025 Sujin Bang. All rights reserved.</li>
 					</ul>
 
 			</div>
@@ -376,12 +760,36 @@
 			<script src="static/js/main.js"></script>
 			
 			<script>
+				let currentPage = 1;
+				const totalPages = 3;
+
 				function openModal(id) {
 				document.getElementById(id).style.display = 'flex';
 				}
 
 				function closeModal(id) {
 				document.getElementById(id).style.display = 'none';
+				}
+
+				function showPage(pageNum) {
+					for (let i = 1; i <= totalPages; i++) {
+						document.getElementById(`page${i}`).classList.remove('active');
+					}
+					document.getElementById(`page${pageNum}`).classList.add('active');
+				}
+
+				function nextPage() {
+					if (currentPage < totalPages) {
+						currentPage++;
+						showPage(currentPage);
+					}
+				}
+
+				function prevPage() {
+					if (currentPage > 1) {
+						currentPage--;
+						showPage(currentPage);
+					}
 				}
 			  </script>
 

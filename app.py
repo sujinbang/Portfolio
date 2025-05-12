@@ -27,5 +27,19 @@ def echart():
 
     return render_template('home.html')
 
+# 부산 관광 현황
+@app.route('/Festival')
+def Festival():
+    return render_template('busan/Festival.html')
+@app.route('/Food')
+def Food():
+    return render_template('busan/Food.html')
+@app.route('/Market')
+def Market():
+    return render_template('busan/Market.html')
+@app.route('/Ocean')
+def Ocean():
+    return render_template('busan/Ocean.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
