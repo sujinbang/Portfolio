@@ -33,7 +33,7 @@
 								<li><a href="#information" id="portfolio-link"><span class="icon solid fa-th">Information</span></a></li>
 								<li><a href="#project" id="about-link"><span class="icon solid fa-user">Project</span></a></li>
 								<li><a href="#career" id="about-link"><span class="icon solid fa-user">Career</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+								<!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li> -->
 							</ul>
 						</nav>
 
@@ -50,7 +50,6 @@
 
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
-						<!-- <img src="static/images/light-bulbs.jpg"> -->
 						<div class="container">
 							<header>
 								<h2 class="alt">방 수 진</h2>
@@ -105,7 +104,6 @@
 										</header>
 									</article>
 									<article class="item">
-										<p class="image fit"></p>
 										<header>
 											<h3>전공 : 공간정보시스템공학과</h3>
 										</header>
@@ -147,7 +145,7 @@
 											<h3>말하는 일기장</h3>
 											<hr>
 											<p class="project-content">
-												KoBERT 기반 문자열 분석을 통해 감정을 분석해주는<br> 말하는 일기장
+												사용자의 감정을 분석해주는 말하는 일기장
 											</p>
 											<br>
 											<button onclick="openModal('modal1')">더 알아보기</button>
@@ -161,7 +159,6 @@
 												포트폴리오 웹사이트
 											</p>
 											<br>
-											<br>
 											<button onclick="openModal('modal2')">더 알아보기</button>
 										</header>
 									</article>
@@ -170,7 +167,7 @@
 											<h3>AIP/DRM 파일 보안 해제</h3>
 											<hr>
 											<p class="project-content">
-												사내 보안 정책으로 자동으로 잠기는 보안 파일에 대해<br> 보안 해제 기능 개발
+												AIP/DRM 보안 파일에 대한 잠금 해제 기능 개발
 											</p>
 											<br>
 											<button onclick="openModal('modal3')">더 알아보기</button>
@@ -183,8 +180,7 @@
 											<h3>이륜차 사고 정보 제공</h3>
 											<hr>
 											<p class="project-content">
-												배달 수요 증가와 이륜차 사고의 연관성 분석 및 <br>
-												사고 다발 지점 정보 제공
+												배달과 사고의 연관성 분석 및 사고 다발 지점 정보 제공
 											</p>
 											<br>
 											<button onclick="openModal('modal4')">더 알아보기</button>
@@ -196,7 +192,7 @@
 											<h3>echarts 대시보드</h3>
 											<hr>
 											<p class="project-content">
-												echarts 라이브러리 기반으로 시각화에 <br> 주로 사용되는 차트 모음집
+												시각화에 주로 사용되는 차트 모음집
 											</p>
 											<br>
 											<button onclick="openModal('modal5')">더 알아보기</button>
@@ -204,10 +200,10 @@
 									</article>
 									<article class="item">
 										<header>
-											<h3>문자열 유사도 분석</h3>
+											<h3>TF-IDF 기반 문자열 유사도 분석</h3>
 											<hr>
 											<p class="project-content">
-												TF-IDF + Word2Vec 기반 문자열 유사도 분석을 통한 <br>유사 사례 이슈 분석
+												유사도 분석을 통한 유사 사례 이슈 분석
 											</p>
 											<br>
 											<button onclick="openModal('modal6')">더 알아보기</button>
@@ -221,7 +217,7 @@
 											<h3>부산 관광 현황 분석</h3>
 											<hr>
 											<p class="project-content">
-												부산 관광객 유치를 위해 전통시장 활성화 및 관광객을 위한 여행 정보 시각화를 목적으로 진행된 프로젝트
+												부산 관광객 유치를 위한 전통시장 및 여행지 정보 제공
 											</p>
 											<br>
 											<button onclick="openModal('modal7')">더 알아보기</button>
@@ -232,7 +228,7 @@
 											<h3>크롤러 개발</h3>
 											<hr>
 											<p class="project-content">
-												Selenium & BeautifulSoup 기반<br> 웹사이트 크롤링
+												Selenium & BeautifulSoup 기반 웹사이트 크롤링
 											</p>
 											<br>
 											<button onclick="openModal('modal8')">더 알아보기</button>
@@ -242,7 +238,9 @@
 										<header>
 											<h3>ChatGPT API 활용 LLM/RAG 구현</h3>
 											<hr>
-											<br>
+											<p class="project-content">
+												pdf 파일 기반 Chatbot
+											</p>
 											<br>
 											<button onclick="openModal('modal9')">더 알아보기</button>
 										</header>
@@ -290,22 +288,12 @@
 									<hr>
 									<h6>⛏ Skills</h6>
 									<hr>
+									<div class="modal-summary">
+										Python, pandas, numpy, KoBERT, Konlpy, STT/TTS
+									</div>
 									<h6>⚙ Setup & Usage</h6>
 									<hr>
 								</div>
-
-									
-
-								<div class="page" id="page2">
-									<h2>페이지 2</h2>
-									<p>두 번째 페이지입니다.</p>
-								</div>
-								<div class="page" id="page3">
-									<h2>페이지 3</h2>
-									<p>세 번째 페이지입니다.</p>
-								</div>
-								<!-- <button onclick="prevPage()">이전</button>
-								<button onclick="nextPage()">다음</button> -->	
 
 								<button class="close-btn" onclick="closeModal('modal1')">닫기</button>
 
@@ -501,8 +489,8 @@
 							<div class="modal-content">
 								<div class="social-icons">
 									<h5>문자열 유사도 분석
-									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
-										<i class="fab fa-github"></i>
+									<a href="https://bbangya22.tistory.com/entry/NLPML-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B8%B0%EB%B0%98-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EB%B6%84%EB%A5%98-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B8" target="_blank" title="블로그">
+										<i class="fas fa-blog"></i>
 									</a>
 									</h5>
 								</div>
@@ -683,64 +671,161 @@
 
 							<header>
 								<h2>Career</h2>
+								<a href="#" onclick="openModal('modal10')">자세히 보기</a>
 							</header>
+
 
 							<div class="image featured"></div>
+							<div class="career-title">
+								㈜지아이티 | 데이터 분석 및 보안 컨설팅 (근무기간: 2023.11 ~ 2025.05)
+							</div>
+							<hr>
+							<div class="career-content">
+								1. RPA 업무 자동화 : 인터넷 업데이트 자동화 시스템 개발<br>
+								2. 인터넷 업데이트 현황 분석 시스템 개발<br>
+								3. FAQ 페이지 개발 및 유지보수<br>
+								4. 보안 취약점 검증<br>
+								5. Jira 이슈 텍스트 분석 및 유사 사례 탐색
+							</div>
+							<br>
+							<div class="career-title">
+								㈜칸테크 │ 백엔드 개발 및 데이터 분석 (근무기간: 2022.12 ~ 2023.10)
+							</div>
+							<hr>
+							<div class="career-content">
+								1. 성과관리 시스템 유지보수 및 개발<br>
+								2. 대시보드 시스템 유지보수 및 개발<br>
+								3. 공시자료 크롤링 시스템 개발<br>
+								4. 중도탈락학생 분석 시스템 개발 및 시각화
+							</div>
+							<br>
+							<div class="career-title">
+								㈜나비스오토모티브시스템즈 | 데이터 엔지니어 (근무기간: 2019.12 ~ 2021.02)
+							</div>
+							<hr>
+							<div class="career-content">
+								1. 대용량 공간 데이터 처리 및 Converting<br>
+								2. 데이터 품질 검수 및 오류 분석<br>
+								3. 툴 개선 기여 및 협업<br>
+								4. 업무 프로세스 표준화 및 문서화
+							</div>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
 
 						</div>
 					</section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+					<!-- 모달 HTML -->
+					<div class="modal-overlay" id="modal10">
+						<div class="modal">
+							<div class="modal-content">
+								<div class="page" id="page1">
+									<div class="social-icons">
+										<h5>경력기술서</h5>
 									</div>
-
-									<div class="col-12">
-										<div class="social-icons">
-											<a href="https://github.com/sujinbang" target="_blank" title="GitHub">
-												<i class="fab fa-github"></i>
-											</a>
-											<a href="https://bbangya22.tistory.com" target="_blank" title="블로그">
-												<i class="fas fa-blog"></i>
-											</a>
+									<br>
+									<div class="modal-title">
+										<h6>㈜지아이티 | 데이터 분석 및 보안 컨설팅 (근무기간: 2023.11 ~ 2025.05)</h6>
+										<hr>
+										<div class="modal-summary">
+											1. RPA 업무 자동화 : 인터넷 업데이트 자동화 시스템 개발<br>
+											- 기술 스택: Python (자동화 스크립트 개발), Tkinter (GUI 구현)<br>
+											- 주요 업무:<br>
+											• 진단기 앱 업데이트 프로세스 자동화 도구 개발<br>
+											• 버전 확인, 파일 내용 변경, 자동 분할 압축, 빈 파일 검증, 파일 취합 자동화 기능 구현<br>
+											• 파일 버전 불일치 오류 방지 및 업무 효율성 개선<br>
+											2. 인터넷 업데이트 현황 분석 시스템 개발<br>
+											- 기술 스택: Python, Pandas, NumPy, Matplotlib, Seaborn, Streamlit<br>
+											- 주요 업무:<br>
+											• 데이터 수집 및 전처리 자동화 : 크롤링·API 연동·데이터 정제 등 데이터 파이프라인 구축 경험 보유<br>
+											• 데이터 분석 및 시각화 : 데이터 인사이트 도출 및 리포트 생성 경험 보유<br>
+											• 웹 기반 보고 시스템 개발(Streamlit 대시보드 구축)<br>
+											• 프로세스 개선 및 자동화 기여 :<br>
+											3. FAQ 페이지 개발 및 유지보수<br>
+											- 기술 스택: Zendesk Guide, 고객 지원 시스템 최적화, 데이터 기반 FAQ 설계<br>
+											- 주요 업무:<br>
+											• Zendesk를 활용한 FAQ 페이지 설계·구축 및 콘텐츠 관리<br>
+											• 고객 문의 데이터 분석을 바탕으로 FAQ UI 개선<br>
+											• FAQ 최적화를 통해 사용자 편의성 향상<br>
+											4. 보안 취약점 검증<br>
+											- 기술 스택: Python(Drozer, Frida, MobSF), ADB, Docker, Burp Suite, ZAP(OWASP ZAP), Wireshark<br>
+											- 운영 체제: Android, iOS, Windows, Server<br>
+											- 주요 업무:<br>
+											• Android, iOS 모바일 앱, 웹 애플리케이션, 서버 환경 전반에 걸친 보안 취약점 분석 수행<br>
+											• Python 기반 도구(Drozer, Frida, MobSF)와 Burp Suite, ZAP 등 보안 툴을 활용하여 다음 항목 검증<br>
+											• 키 관리 및 암·복호화 검토<br>
+											• 데이터 저장·관리 취약점 분석<br>
+											• 리버스 엔지니어링 방지 기능 검증<br>
+											• 사용자 인증 및 계정 보안 점검<br>
+											• 네트워크 통신 보안성 분석 (패킷 캡처·분석)<br>
+											• 검증 결과 기반으로 보안 리스크 평가 및 개선 방안 제안, 시스템 전반의 보안성 강화 기여<br>
+											5. Jira 이슈 텍스트 분석 및 유사 사례 탐색<br>
+											- 기술 스택: Python (pandas, numpy, scikit-learn, nltk, konlpy, gensim)<br>
+											- 주요 업무:<br>
+											• Jira 이슈 유형 분류를 위한 텍스트 데이터 분석 및 모델링<br>
+											• 데이터 전처리<br>
+											&nbsp&nbsp&nbsp&nbsp• 토큰화: 한국어(konlpy), 영어(nltk, spaCy)<br>
+											&nbsp&nbsp&nbsp&nbsp• 임베딩: TF-IDF, Word2Vec, TF-IDF + Word2Vec 조합<br>
+											&nbsp&nbsp&nbsp&nbsp• 불균형 데이터 처리: KMeans 클러스터링 (Elbow 방법으로 k값 최적화)<br>
+											• 모델링 및 최적화<br>
+											&nbsp&nbsp&nbsp&nbsp• 로지스틱 회귀 모델을 활용한 이슈 유형 분류<br>
+											&nbsp&nbsp&nbsp&nbsp• Grid Search를 통한 하이퍼파라미터 튜닝으로 모델 성능 최적화<br>
+											• 모델 평가<br>
+											&nbsp&nbsp&nbsp&nbsp• Accuracy, Precision, Recall, F1-score, Support 지표 기반 성능 평가<br>
+											• 프로젝트 인사이트<br>
+											&nbsp&nbsp&nbsp&nbsp• 특정 클래스로의 예측 편향 및 분류 기준 모호성 확인 추가 데이터 수집 필요성 도출
 										</div>
 										<br>
-										<input type="submit" value="Send Message" />
+										<h6>㈜칸테크 │ 백엔드 개발 및 데이터 분석 (근무기간: 2022.12 ~ 2023.10)</h6>
+										<hr>
+										<div class="modal-summary">
+											본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
+											일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
+											말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										</div>
+										<br>
+										<h6>㈜나비스오토모티브시스템즈 | 데이터 엔지니어 (근무기간: 2019.12 ~ 2021.02)</h6>
+										<hr>
+
 									</div>
 								</div>
-							</form>
 
+								<div class="page" id="page2">
+									<h2>페이지 2</h2>
+									<p>두 번째 페이지입니다.</p>
+								</div>
+								<div class="page" id="page3">
+									<h2>페이지 3</h2>
+									<p>세 번째 페이지입니다.</p>
+								</div>
+								<button onclick="prevPage()">이전</button>
+								<button onclick="nextPage()">다음</button>
+
+								<button class="close-btn" onclick="closeModal('modal10')">닫기</button>
+							</div>
 						</div>
-					</section>
+					</div>
+
+
 
 			</div>
 
 
 		<!-- Footer -->
 			<div id="footer">
+
+				<div class="row">
+					<div class="col-12">
+						<div class="social-icons">
+							<a href="https://github.com/sujinbang" target="_blank" title="GitHub">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="https://bbangya22.tistory.com" target="_blank" title="블로그">
+								<i class="fas fa-blog"></i>
+							</a>
+						</div>
+						<br>
+					</div>
+				</div>
 
 				<!-- Copyright -->
 					<ul class="copyright">
@@ -765,11 +850,12 @@
 				const totalPages = 3;
 
 				function openModal(id) {
-				document.getElementById(id).style.display = 'flex';
+					event.preventDefault(); // a 태그 기본 동작 방지
+					document.getElementById(id).style.display = 'flex';
 				}
 
 				function closeModal(id) {
-				document.getElementById(id).style.display = 'none';
+					document.getElementById(id).style.display = 'none';
 				}
 
 				function showPage(pageNum) {
