@@ -30,9 +30,10 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#information" id="portfolio-link"><span class="icon solid fa-th">Information</span></a></li>
+								<li><a href="#information" id="portfolio-link"><span class="icon solid fa-user">Information</span></a></li>
+								<li><a href="#skills" id="about-link"><span class="icon solid fa-gears">Skills</span></a></li>
 								<li><a href="#project" id="about-link"><span class="icon solid fa-user">Project</span></a></li>
-								<li><a href="#career" id="about-link"><span class="icon solid fa-user">Career</span></a></li>
+								<li><a href="#career" id="about-link"><span class="icon solid fa-file">Career</span></a></li>
 								<!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li> -->
 							</ul>
 						</nav>
@@ -67,7 +68,9 @@
 									</div>
 								</div>
 								<br>
-								<button onclick="">이력서 다운로드</button>
+								<a href="/download">
+									<button>이력서 다운로드</button>
+								</a>
 							</header>
 
 							<!-- Font Awesome 아이콘 사용 -->
@@ -122,14 +125,24 @@
 									</article>
 								</div>
 							</div>
+						</div>
+					</section>
 
+					<!-- Skills -->
+					<section id="skills" class="two">
+						<div class="container">
 
+							<header>
+								<h2>Skills</h2>
+							</header>
+
+								<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/>
 
 						</div>
 					</section>
 
 				<!-- Project -->
-					<section id="project" class="three">
+					<section id="project" class="two">
 						<div class="container">
 
 							<header>
@@ -179,7 +192,7 @@
 										<header>
 											<h3>이륜차 사고 정보 제공</h3>
 											<hr>
-											<p class="project-content">
+											<p class="project-content" style="font-size: 14px;">
 												배달과 사고의 연관성 분석 및 사고 다발 지점 정보 제공
 											</p>
 											<br>
@@ -217,7 +230,7 @@
 											<h3>부산 관광 현황 분석</h3>
 											<hr>
 											<p class="project-content">
-												부산 관광객 유치를 위한 전통시장 및 여행지 정보 제공
+												부산 관광객 유치를 위한 정보 제공
 											</p>
 											<br>
 											<button onclick="openModal('modal7')">더 알아보기</button>
@@ -279,20 +292,58 @@
 									<h6>💡 Background</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										매일 하루를 정리하고 기록하는 것을 좋아하는 구성원분의 아이디어로 시작되었습니다.<br>
+										저녁마다 다이어리 어플을 사용해서 하루를 기록하지만 가볍게 남기고 싶을 때 음성으로 남기고 싶다는 생각이 있으셨다고해요.<br>
+										그리고 나만의 일기장이지만 한번씩 내용에 대한 피드백도 받고 싶을 때가 있었다고 하셨습니다.<br>
+										이 아이디어로 개발하게 된 서비스 입니다.<br>
+										STT/TTS 기능으로 말하는 그대로를 텍스트로 기록하고, 피드백은 AI 분석을 통해 내용을 바탕으로 분석 및 가벼운 한마디를 구현하였습니다. 
 									</div>
 									<br>
 									<h6>🔍 Meaning</h6>
 									<hr>
+									<div class="modal-summary">
+										STT와 TTS 기능을 구현하며 음성 처리 기술의 구조와 흐름을 이해하게 되었고, 실제 음성 데이터를 다루는 재미와 동시에 정확도 향상을 위한 고민도 많았습니다.<br>
+										감성 분석 모델을 통해 텍스트를 ‘이해하는’ 인공지능의 매력을 느꼈고, 결과가 자연스럽게 사용자 경험으로 연결되도록 개선하는 과정에서 실용성과 감성의 균형을 고민하게 되었습니다.<br>
+										외부 API를 연동하고 프론트엔드-백엔드 구조로 웹서비스를 개발하면서 서비스화에 대한 실무 감각도 키울 수 있었습니다.
+									</div>
+									<br>
 									<h6>⛏ Skills</h6>
 									<hr>
 									<div class="modal-summary">
 										Python, pandas, numpy, KoBERT, Konlpy, STT/TTS
 									</div>
+									<br>
 									<h6>⚙ Setup & Usage</h6>
 									<hr>
+									<div class="modal-summary">
+										1) 가상환경 생성 및 django 설치
+										<div class="setup-content">
+											conda create -n 가상환경이름
+											<br>
+											<br>
+											conda install -c conda-forge django==4.0.1
+										</div>
+										2) 환경 설정 파일 설치
+										<div class="setup-content">
+											pip install -r requirements.txt
+										</div>
+										3) Oracle DB 생성
+										<div class="setup-content">
+											# cmd(관리자)창 켜서 <br>
+											<br>
+											sqlplus "/as sysdba" <br>
+											create user 계정이름 identified by 비밀번호;<br>
+											grant connect, resource, dba to 계정이름;<br>
+											<br>
+											# sql developer 켜서 새접속 로그인
+										</div>
+										*) 오라클에서 시퀀스 생성 필요
+										<div class="setup-content">
+											CREATE SEQUENCE test_sq START WITH 1 INCREMENT BY 1;
+										</div>
+										*) 구글 드라이브 연동 : GPU 서버 사용을 위해 Colab에서 AI 분석 진행
+									</div>
+
 								</div>
 
 								<button class="close-btn" onclick="closeModal('modal1')">닫기</button>
@@ -357,17 +408,15 @@
 								</div>
 								<hr>
 								<div class="modal-date">
-								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
-								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
+								2025.00.00 ~ 2025.00.00 (1인 프로젝트)<br>
+								<a href="">📎 download : </a>
 								</div>
 								<br>
 								<div class="modal-title">
 									<h6>📌 Summary</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										본 프로젝트는 
 									</div>
 									<br>
 									<h6>💡 Background</h6>
@@ -402,38 +451,54 @@
 								<hr>
 								<div class="modal-date">
 								2022.00.00 ~ 2022.00.00 (3인 프로젝트)<br>
-								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
 								</div>
 								<br>
 								<div class="modal-title">
 									<h6>📌 Summary</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 배달 수요 증가와 이륜차 사고가 어떤 연관성이 있는지에 대한 아이디어로 시작하여 사고 다발 지점 정보를 제공하는 프로젝트 입니다.
-										EDA 기반의 데이터 분석 및 시각화를 진행하였으며. Scikit-learn 라이브러리를 활용하여 이륜차 사고와 배달 사용량을 T-검정으로 확인 후 다항회귀분석 및 상관관계 분석으로 연관성을 확인하였습니다.
+										본 프로젝트는 배달 수요 증가와 이륜차 사고가 어떤 연관성이 있는지에 대한 아이디어로 시작하여 사고 다발 지점 정보를 제공하는 프로젝트 입니다.<br>
+										EDA 기반의 데이터 분석 및 시각화를 진행하였으며. Scikit-learn 라이브러리를 활용하여 이륜차 사고와 배달 사용량을 T-검정으로 확인 후 다항회귀분석 및 상관관계 분석으로 연관성을 확인하였습니다.<br>
 										분석 내용은 django를 활용하여 구현한 웹페이지에 이미지로 시각화하였으며, 배달 사용량이 가장 많은 서울지역을 대상으로 사고 다발 지점 정보를 제공하는 웹 페이지를 구현하였습니다.
 									</div>
 									<br>
 									<h6>💡 Background</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										코로나 시대, 급격히 증가한 배달 수요로 이륜차 사고율이 증가하고 있다는 뉴스를 접하게 되었습니다.<br>
+										실제 데이터를 통해 이륜차 사고와 배달 수요의 증가가 직접적인 연관성이 있는지 확인하고자 프로젝트를 시작하였습니다.<br>
+										실제로 증가하고 있는 이륜차 사고율을 확인하였으며, 조금이라도 안전하게 배달하실 수 있도록 배달원분들께 도움이 되고자 사고다발지점 정보를 제공하고자 하였습니다.
 									</div>
 									<br>
 									<h6>🔍 Meaning</h6>
 									<hr>
+									<div class="modal-summary">
+										단순한 통계 분석이 아닌, 현장의 문제를 파악하고 이를 데이터로 설명하는 능력이 얼마나 중요한지 체감했습니다.<br>
+										교통사고 데이터, 배달 밀집 지역 등 다양한 데이터를 수집·가공하는 과정에서 데이터 전처리, 분석, 시각화에 대한 실무 감각이 향상되었습니다.<br>
+										특히 “데이터를 어떻게 전달하느냐”가 활용도를 결정한다는 사실을 알게 되었고, 기술 외에도 UX와 정보 전달 방식의 중요성을 배우게 된 프로젝트였습니다.
+									</div>
+									<br>
 									<h6>⛏ Skills</h6>
 									<hr>
 									<div class="modal-summary">
-										<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue"/>
-
 										pandas, matplotlib, seaborn, folium, Scikit-learn, django, oracle
 									</div>
 									<br>
 									<h6>⚙ Setup & Usage</h6>
 									<hr>
+									<div class="modal-summary">
+										1) 가상환경 생성 및 django 설치
+										<div class="setup-content">
+											conda create -n 가상환경이름
+											<br>
+											<br>
+											conda install -c conda-forge django==4.0.1
+										</div>
+										2) 환경 설정 파일 설치
+										<div class="setup-content">
+											pip install -r requirements.txt
+										</div>
+									</div>
 								</div>
 								<button class="close-btn" onclick="closeModal('modal4')">닫기</button>
 							</div>
@@ -459,9 +524,8 @@
 									<h6>📌 Summary</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										본 프로젝트는 업무 중 대시보드 생성 시 편의를 위해 자주 쓰는 차트를 편하게 구현할 수 있도록 개발한 대시보드입니다.<br>
+										ECharts 라이브러리는 웹 기반 대시보드나 데이터 시각화를 할 때 차트의 종류가 많고 이벤트 처리가 쉬우며, tooltip 등 인터랙션 기능이 명확해서 이를 사용하였습니다.<br>	
 									</div>
 									<br>
 									<h6>💡 Background</h6>
@@ -474,10 +538,33 @@
 									<br>
 									<h6>🔍 Meaning</h6>
 									<hr>
+									<div class="modal-summary">
+										ECharts의 다양한 커스터마이징 기능을 활용하며, 단순 차트 구현을 넘어 사용자 맞춤형 인터랙션과 디자인을 구성할 수 있게 되었습니다.<br>
+										단순한 시각화가 아닌, 의미 있는 흐름과 인사이트를 전달하는 디자인에 대해 고민하게 된 계기였습니다.<br>
+										단순한 기술 구현을 넘어서, 데이터를 직관적으로 전달하는 설계력과 사용자의 시선에서 정보를 배치하는 사고 방식을 배울 수 있었던 프로젝트였습니다.
+									</div>
+									<br>
 									<h6>⛏ Skills</h6>
 									<hr>
+									<div class="modal-summary">
+										ECharts, HTML/CSS/JavaScript, Flask, Pandas, JSON
+									</div>
+									<br>
 									<h6>⚙ Setup & Usage</h6>
 									<hr>
+									<div class="modal-summary">
+										1) 가상환경 생성 및 django 설치
+										<div class="setup-content">
+											conda create -n 가상환경이름
+											<br>
+											<br>
+											conda install -c conda-forge django==4.0.1
+										</div>
+										2) 환경 설정 파일 설치
+										<div class="setup-content">
+											pip install -r requirements.txt
+										</div>
+									</div>
 								</div>
 
 								<button class="close-btn" onclick="closeModal('modal5')">닫기</button>
@@ -488,7 +575,7 @@
 						<div class="modal">
 							<div class="modal-content">
 								<div class="social-icons">
-									<h5>문자열 유사도 분석
+									<h5>TF-IDF 문자열 유사도 분석
 									<a href="https://bbangya22.tistory.com/entry/NLPML-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B8%B0%EB%B0%98-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EB%B6%84%EB%A5%98-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B8" target="_blank" title="블로그">
 										<i class="fas fa-blog"></i>
 									</a>
@@ -533,7 +620,7 @@
 							<div class="modal-content">
 								<div class="social-icons">
 									<h5>부산 관광 현황 분석
-									<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
+									<a href="https://github.com/sujinbang/01_MINIPROJECT" target="_blank" title="GitHub">
 										<i class="fab fa-github"></i>
 									</a>
 									</h5>
@@ -547,21 +634,17 @@
 									<h6>📌 Summary</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										본 프로젝트는 부산 관광객 유치를 위해 부산의 여행 상품(트래킹 + 세븐브릿지)을 홍보하고 전통시장 활성화 및 관광객을 위한 여행 정보 시각화를 목적으로 진행된 프로젝트 입니다.<br>
 									</div>
 									<br>
 									<h6>💡 Background</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										코로나 영향으로 2019년 말부터 부산 관광객 수가 크게 감소하였습니다.<br>
+										부산 관광 산업을 활성화 시키기 위해 지자체에서 부산의 여행 상품(트래킹 + 세븐브릿지)을 개설하였음을 확인하였으나, 많은 사람들에게 알려지지 않은 것으로 보였습니다.<br>
+										부산의 관광 현황 분석을 통해 문제점을 확인하였고, 문제를 해결하기 위해 지자체에서 운영 중인 상품을 알리고 관광객들에게 정보를 제공하고자 프로젝트를 시작하였습니다.
 									</div>
 									<br>
-									<h6>🔍 Meaning</h6>
-									<hr>
 									<h6>🔍 Preview</h6>
 									<hr>
 									<iframe class="modal-preview" src="/Festival"></iframe>
@@ -569,6 +652,10 @@
 									<p class="modal-summary">Folium 활용 : 축제 현황(왼쪽), 시장 개수 및 현황(오른쪽)</p>
 									<h6>⛏ Skills</h6>
 									<hr>
+									<div class="modal-summary">
+										pandas, matplotlib, seaborn, folium
+									</div>
+									<br>
 									<h6>⚙ Setup & Usage</h6>
 									<hr>
 								</div>
@@ -588,7 +675,7 @@
 								</div>
 								<hr>
 								<div class="modal-date">
-								2022.00.00 ~ 2022.00.00 (7인 프로젝트)<br>
+								2025.00.00 ~ 2025.00.00 (1인 프로젝트)<br>
 								<a href="https://speaking-diary.netlify.app/">📎 URL : https://speaking-diary.netlify.app/</a>
 								</div>
 								<br>
@@ -596,23 +683,32 @@
 									<h6>📌 Summary</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										본 프로젝트는 특정 웹사이트에서 필요한 정보를 자동으로 수집 및 저장하기 위해 진행하였습니다.<br>
+										BeautifulSoup과 Selenium 라이브러리 기반 웹페이지 요청 및 HTML 파싱을 자동화하여 원하는 데이터를 추출하는 기능을 구현하였습니다.
 									</div>
 									<br>
 									<h6>💡 Background</h6>
 									<hr>
 									<div class="modal-summary">
-										본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-										일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-										말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+										웹상에는 다양한 정보가 존재하지만, 이를 수동으로 수집하고 정리하는 것은 많은 시간과 노력이 소요됩니다.<br>
+										반복적인 데이터 수집 작업을 자동화하여 정확하고 신속한 정보 획득을 목표로 크롤러 개발이 필요했습니다.<br>
+										특히, 실시간 데이터 분석, 가격 비교, 콘텐츠 수집 등 특정 목적에 맞는 데이터 확보가 중요해지면서 크롤러의 역할이 강조되고 있습니다.
 									</div>
 									<br>
 									<h6>🔍 Meaning</h6>
 									<hr>
+									<div class="modal-summary">
+										크롤러를 직접 개발하면서 단순한 자동화 이상의 가치를 느낄 수 있었습니다.<br>
+										처음에는 단순히 데이터를 수집하는 도구라고 생각했지만, 웹 구조 분석, 데이터 정제, 예외 처리 등 다양한 기술이 복합적으로 요구된다는 점에서 개발 역량이 전반적으로 향상되는 경험이었습니다.<br>
+										무엇보다도, 단순한 코드 작성이 아닌 실질적인 문제 해결 도구로써의 프로그래밍을 체감할 수 있는 좋은 기회였습니다.
+									</div>
+									<br>
 									<h6>⛏ Skills</h6>
 									<hr>
+									<div class="modal-summary">
+										Python, BeautifulSoup, Selenium, XPath, CSS Selector
+									</div>
+									<br>
 									<h6>⚙ Setup & Usage</h6>
 									<hr>
 								</div>
@@ -666,7 +762,7 @@
 					</div>
 
 					<!-- Career -->
-					<section id="career" class="four">
+					<section id="career" class="two">
 						<div class="container">
 
 							<header>
@@ -719,84 +815,136 @@
 						<div class="modal">
 							<div class="modal-content">
 								<div class="page" id="page1">
-									<div class="social-icons">
-										<h5>경력기술서</h5>
-									</div>
-									<br>
 									<div class="modal-title">
-										<h6>㈜지아이티 | 데이터 분석 및 보안 컨설팅 (근무기간: 2023.11 ~ 2025.05)</h6>
+										<h6>㈜지아이티 | 데이터 분석 및 보안 컨설팅</h6>
+									</div>
+									<div class="modal-summary">
+										근무기간: 2023.11 ~ 현재 (1년 7개월)
+									</div>
+									<hr>
+									<div class="modal-summary">
+										1. RPA 업무 자동화 : 인터넷 업데이트 자동화 시스템 개발<br>
+										- 기술 스택: Python (자동화 스크립트 개발), Tkinter (GUI 구현)<br>
+										- 주요 업무:<br>
+										・ 진단기 앱 업데이트 프로세스 자동화 도구 개발<br>
+										・ 버전 확인, 파일 내용 변경, 자동 분할 압축, 빈 파일 검증, 파일 취합 자동화 기능 구현<br>
+										・ 파일 버전 불일치 오류 방지 및 업무 효율성 개선<br>
 										<hr>
-										<div class="modal-summary">
-											1. RPA 업무 자동화 : 인터넷 업데이트 자동화 시스템 개발<br>
-											- 기술 스택: Python (자동화 스크립트 개발), Tkinter (GUI 구현)<br>
-											- 주요 업무:<br>
-											• 진단기 앱 업데이트 프로세스 자동화 도구 개발<br>
-											• 버전 확인, 파일 내용 변경, 자동 분할 압축, 빈 파일 검증, 파일 취합 자동화 기능 구현<br>
-											• 파일 버전 불일치 오류 방지 및 업무 효율성 개선<br>
-											2. 인터넷 업데이트 현황 분석 시스템 개발<br>
-											- 기술 스택: Python, Pandas, NumPy, Matplotlib, Seaborn, Streamlit<br>
-											- 주요 업무:<br>
-											• 데이터 수집 및 전처리 자동화 : 크롤링·API 연동·데이터 정제 등 데이터 파이프라인 구축 경험 보유<br>
-											• 데이터 분석 및 시각화 : 데이터 인사이트 도출 및 리포트 생성 경험 보유<br>
-											• 웹 기반 보고 시스템 개발(Streamlit 대시보드 구축)<br>
-											• 프로세스 개선 및 자동화 기여 :<br>
-											3. FAQ 페이지 개발 및 유지보수<br>
-											- 기술 스택: Zendesk Guide, 고객 지원 시스템 최적화, 데이터 기반 FAQ 설계<br>
-											- 주요 업무:<br>
-											• Zendesk를 활용한 FAQ 페이지 설계·구축 및 콘텐츠 관리<br>
-											• 고객 문의 데이터 분석을 바탕으로 FAQ UI 개선<br>
-											• FAQ 최적화를 통해 사용자 편의성 향상<br>
-											4. 보안 취약점 검증<br>
-											- 기술 스택: Python(Drozer, Frida, MobSF), ADB, Docker, Burp Suite, ZAP(OWASP ZAP), Wireshark<br>
-											- 운영 체제: Android, iOS, Windows, Server<br>
-											- 주요 업무:<br>
-											• Android, iOS 모바일 앱, 웹 애플리케이션, 서버 환경 전반에 걸친 보안 취약점 분석 수행<br>
-											• Python 기반 도구(Drozer, Frida, MobSF)와 Burp Suite, ZAP 등 보안 툴을 활용하여 다음 항목 검증<br>
-											• 키 관리 및 암·복호화 검토<br>
-											• 데이터 저장·관리 취약점 분석<br>
-											• 리버스 엔지니어링 방지 기능 검증<br>
-											• 사용자 인증 및 계정 보안 점검<br>
-											• 네트워크 통신 보안성 분석 (패킷 캡처·분석)<br>
-											• 검증 결과 기반으로 보안 리스크 평가 및 개선 방안 제안, 시스템 전반의 보안성 강화 기여<br>
-											5. Jira 이슈 텍스트 분석 및 유사 사례 탐색<br>
-											- 기술 스택: Python (pandas, numpy, scikit-learn, nltk, konlpy, gensim)<br>
-											- 주요 업무:<br>
-											• Jira 이슈 유형 분류를 위한 텍스트 데이터 분석 및 모델링<br>
-											• 데이터 전처리<br>
-											&nbsp&nbsp&nbsp&nbsp• 토큰화: 한국어(konlpy), 영어(nltk, spaCy)<br>
-											&nbsp&nbsp&nbsp&nbsp• 임베딩: TF-IDF, Word2Vec, TF-IDF + Word2Vec 조합<br>
-											&nbsp&nbsp&nbsp&nbsp• 불균형 데이터 처리: KMeans 클러스터링 (Elbow 방법으로 k값 최적화)<br>
-											• 모델링 및 최적화<br>
-											&nbsp&nbsp&nbsp&nbsp• 로지스틱 회귀 모델을 활용한 이슈 유형 분류<br>
-											&nbsp&nbsp&nbsp&nbsp• Grid Search를 통한 하이퍼파라미터 튜닝으로 모델 성능 최적화<br>
-											• 모델 평가<br>
-											&nbsp&nbsp&nbsp&nbsp• Accuracy, Precision, Recall, F1-score, Support 지표 기반 성능 평가<br>
-											• 프로젝트 인사이트<br>
-											&nbsp&nbsp&nbsp&nbsp• 특정 클래스로의 예측 편향 및 분류 기준 모호성 확인 추가 데이터 수집 필요성 도출
-										</div>
-										<br>
-										<h6>㈜칸테크 │ 백엔드 개발 및 데이터 분석 (근무기간: 2022.12 ~ 2023.10)</h6>
+										2. 인터넷 업데이트 현황 분석 시스템 개발<br>
+										- 기술 스택: Python, Pandas, NumPy, Matplotlib, Seaborn, Streamlit<br>
+										- 주요 업무:<br>
+										・ 데이터 수집 및 전처리 자동화 : 크롤링·API 연동·데이터 정제 등 데이터 파이프라인 구축 경험 보유<br>
+										・ 데이터 분석 및 시각화 : 데이터 인사이트 도출 및 리포트 생성 경험 보유<br>
+										・ 웹 기반 보고 시스템 개발(Streamlit 대시보드 구축)<br>
+										・ 프로세스 개선 및 자동화 기여 :<br>
 										<hr>
-										<div class="modal-summary">
-											본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-											일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-											말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
-										</div>
-										<br>
-										<h6>㈜나비스오토모티브시스템즈 | 데이터 엔지니어 (근무기간: 2019.12 ~ 2021.02)</h6>
+										3. FAQ 페이지 개발 및 유지보수<br>
+										- 기술 스택: Zendesk Guide, 고객 지원 시스템 최적화, 데이터 기반 FAQ 설계<br>
+										- 주요 업무:<br>
+										・ Zendesk를 활용한 FAQ 페이지 설계·구축 및 콘텐츠 관리<br>
+										・ 고객 문의 데이터 분석을 바탕으로 FAQ UI 개선<br>
+										・ FAQ 최적화를 통해 사용자 편의성 향상<br>
 										<hr>
-
+										4. 보안 취약점 검증<br>
+										- 기술 스택: Python(Drozer, Frida, MobSF), ADB, Docker, Burp Suite, ZAP(OWASP ZAP), Wireshark<br>
+										- 운영 체제: Android, iOS, Windows, Server<br>
+										- 주요 업무:<br>
+										・ Android, iOS 모바일 앱, 웹 애플리케이션, 서버 환경 전반에 걸친 보안 취약점 분석 수행<br>
+										・ Python 기반 도구(Drozer, Frida, MobSF)와 Burp Suite, ZAP 등 보안 툴을 활용하여 다음 항목 검증<br>
+										&nbsp&nbsp&nbsp&nbsp・ 키 관리 및 암·복호화 검토<br>
+										&nbsp&nbsp&nbsp&nbsp・ 데이터 저장·관리 취약점 분석<br>
+										&nbsp&nbsp&nbsp&nbsp・ 리버스 엔지니어링 방지 기능 검증<br>
+										&nbsp&nbsp&nbsp&nbsp・ 사용자 인증 및 계정 보안 점검<br>
+										&nbsp&nbsp&nbsp&nbsp・ 네트워크 통신 보안성 분석 (패킷 캡처·분석)<br>
+										・ 검증 결과 기반으로 보안 리스크 평가 및 개선 방안 제안, 시스템 전반의 보안성 강화 기여<br>
+										<hr>
+										5. Jira 이슈 텍스트 분석 및 유사 사례 탐색<br>
+										- 기술 스택: Python (pandas, numpy, scikit-learn, nltk, konlpy, gensim)<br>
+										- 주요 업무:<br>
+										・ Jira 이슈 유형 분류를 위한 텍스트 데이터 분석 및 모델링<br>
+										・ 데이터 전처리<br>
+										&nbsp&nbsp&nbsp&nbsp・ 토큰화: 한국어(konlpy), 영어(nltk, spaCy)<br>
+										&nbsp&nbsp&nbsp&nbsp・ 임베딩: TF-IDF, Word2Vec, TF-IDF + Word2Vec 조합<br>
+										&nbsp&nbsp&nbsp&nbsp・ 불균형 데이터 처리: KMeans 클러스터링 (Elbow 방법으로 k값 최적화)<br>
+										・ 모델링 및 최적화<br>
+										&nbsp&nbsp&nbsp&nbsp・ 로지스틱 회귀 모델을 활용한 이슈 유형 분류<br>
+										&nbsp&nbsp&nbsp&nbsp・ Grid Search를 통한 하이퍼파라미터 튜닝으로 모델 성능 최적화<br>
+										・ 모델 평가<br>
+										&nbsp&nbsp&nbsp&nbsp・ Accuracy, Precision, Recall, F1-score, Support 지표 기반 성능 평가<br>
+										・ 프로젝트 인사이트<br>
+										&nbsp&nbsp&nbsp&nbsp・ 특정 클래스로의 예측 편향 및 분류 기준 모호성 확인 추가 데이터 수집 필요성 도출
 									</div>
 								</div>
 
 								<div class="page" id="page2">
-									<h2>페이지 2</h2>
-									<p>두 번째 페이지입니다.</p>
+									<div class="modal-title">
+										<h6>㈜칸테크 │ 백엔드 개발 및 데이터 분석 </h6>
+									</div>
+									<div class="modal-summary">
+										근무기간: 2022.12 ~ 2023.10(11개월)
+									</div>
+									<hr>
+									<div class="modal-summary">
+										1. 성과관리 시스템 유지보수 및 개발<br>
+										- 기술 스택: Java, Spring, Oracle DB<br>
+										- 주요 업무:<br>
+										・ Spring 기반 시스템 유지보수 및 기능 개선<br>
+										・ 로그 분석을 통한 장애 대응 및 트랜잭션 모니터링<br>
+										・ 중앙일보 평가 지표 산식 일괄 수정<br>
+										<hr>
+										2. 대시보드 시스템 유지보수 및 개발<br>
+										- 기술 스택: Java, Spring, JavaScript, ECharts, Oracle DB<br>
+										- 주요 업무:<br>
+										・ Spring/JS 기반 대시보드 시스템 유지보수 및 개선<br>
+										・ 서울시립대, 숙명여대 요구사항에 따른 UI 개편 및 지표 구조 개선<br>
+										・ DB 쿼리 최적화를 통한 로딩 속도 개선(6초 2초)<br>
+										<hr>
+										3. 공시자료 크롤링 시스템 개발<br>
+										- 기술 스택: Python, Oracle DB<br>
+										- 주요 업무:<br>
+										・ Python 기반 공시자료 크롤러 개발<br>
+										・ DB ERD 구조 개선 및 데이터 관리 프로시저 구현<br>
+										<hr>
+										4. 중도탈락학생 분석 시스템 개발 및 시각화<br>
+										- 기술 스택: Python (pandas, scikit-learn, XGBoost), JavaScript, ECharts<br>
+										- 주요 업무:<br>
+										・ 학생 중도탈락 예측 모델 개발 및 검증<br>
+										・ 모델링: 로지스틱 회귀, 랜덤 포레스트, XGBoost 등 앙상블 모델 활용<br>
+										・ 정확도 평가: TP/FP/TN/FN 기반 혼동행렬(confusion matrix) 구현 및 성능 분석<br>
+										・ 최종 모델 선정: 다양한 평가 지표 비교를 통한 최적 모델(LF 모델) 선정 및 적용<br>
+										・ 시각화: 랜덤 포레스트 기반 변수 중요도를 ECharts로 시각화하여 대시보드 통합<br>
+									</div>
 								</div>
+
 								<div class="page" id="page3">
-									<h2>페이지 3</h2>
-									<p>세 번째 페이지입니다.</p>
+									<div class="modal-title">
+										<h6>㈜나비스오토모티브시스템즈 | 데이터 엔지니어</h6>
+									</div>
+									<div class="modal-summary">
+										근무기간: 2019.12 ~ 2021.02 (1년 2개월)
+									</div>
+									<hr>
+									<div class="modal-summary">
+										프로젝트 : 3D 공간 데이터 Converting 및 품질 검수<br>
+										Navkingdom 내비게이션 (NPND) / BMW 내비게이션 (MGU) / Benz 내비게이션 (NTG6,7)<br>
+										<br>
+										1. 대용량 공간 데이터 처리 및 Converting<br>
+										- 주요 업무 : 전국 21,636 도엽으로 세분화된 공간 정보(dbf, shx, shp)를 활용하여 전용 개발 툴로 도로·빌딩·터널 등 3D 데이터로 가공 및 변환<br>
+										<hr>
+										2. 데이터 품질 검수 및 오류 분석<br>
+										- 주요 업무 : 다양한 내비게이션 플랫폼(Navkingdom, BMW, Benz)에서의 3D 공간 데이터 오류 검출 및 수정<br>
+										<hr>
+										3. 툴 개선 기여 및 협업<br>
+										- 주요 업무 : PM 및 개발팀과 협업하여 데이터 가공 툴 개선 아이디어 제안 및 기능 개선에 참여, 프로젝트 일정 관리 및 우선순위조정으로 효율성 제고<br>
+										<hr>
+										4. 업무 프로세스 표준화 및 문서화<br>
+										- 주요 업무 : 프로젝트 중 반복 발생 이슈 및 해결 방안을 절차서로 문서화하여 팀 내 지식 공유 및 업무 효율성 향상<br>
+										<hr>
+										기술 스택 : Shapefile (dbf, shx, shp), 데이터 전처리 및 가공, 품질 검수, 프로젝트 일정 관리, Jira/Confluence 사용 경험, 문서화 및 절차서 작성
+									</div>
 								</div>
+								
+
 								<button onclick="prevPage()">이전</button>
 								<button onclick="nextPage()">다음</button>
 
@@ -850,8 +998,11 @@
 				const totalPages = 3;
 
 				function openModal(id) {
-					event.preventDefault(); // a 태그 기본 동작 방지
 					document.getElementById(id).style.display = 'flex';
+					if (id == 'modal10') {
+						event.preventDefault(); // a 태그 기본 동작 방지
+						showPage(currentPage);
+					}
 				}
 
 				function closeModal(id) {
@@ -878,6 +1029,7 @@
 						showPage(currentPage);
 					}
 				}
+
 			  </script>
 
 	</body>

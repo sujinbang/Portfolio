@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, send_from_directory
+from flask import Flask, render_template, request, jsonify, send_from_directory, send_file
 import sqlite3
 import pandas as pd
 import json
@@ -26,6 +26,10 @@ def serve_geojson():
 def echart():
 
     return render_template('home.html')
+
+@app.route("/download")
+def download_test():
+    return send_file("data/resume.pdf", mimetype="application/pdf", as_attachment=True)
 
 # 부산 관광 현황
 @app.route('/Festival')
