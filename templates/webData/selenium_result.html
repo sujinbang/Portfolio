@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/main.css" />
+    <title>결과</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h6>결과</h6>
+        <hr>
+        <div class="modal-summary">{{ h1 }}</div>
+        <div class="modal-summary">{{ h1_body }}</div>
+        <div class="modal-summary">{{ h2 }}</div>
+        <ul class="modal-summary">
+            {% for li_list in li_lists %}
+            <li>
+                {{ li_list }}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <br>
+</body>
+</html>
