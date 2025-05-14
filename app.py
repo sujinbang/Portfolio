@@ -146,4 +146,4 @@ def download_exe():
     return send_file("data/unlockSApp.exe", mimetype='application/octet-stream', as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run()
