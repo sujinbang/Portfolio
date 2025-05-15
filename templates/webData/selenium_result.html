@@ -22,5 +22,17 @@
         </ul>
     </div>
     <br>
+
+    <div class="container">
+        <h6>크롤링 시점 스크린샷</h6>
+        <hr>
+        <!-- 스크린샷 이미지를 표시하는 부분 -->
+        {% if screenshot_filename %}
+            <img src="{{ url_for('static', filename=screenshot_filename) }}" alt="GitHub Page Screenshot" style="max-width: 100%; height: auto;">
+        {% else %}
+            <p>스크린샷 파일을 찾을 수 없습니다.</p>
+        {% endif %}
+    </div>
+    <br>
 </body>
 </html>
