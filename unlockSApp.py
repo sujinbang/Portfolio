@@ -1,6 +1,3 @@
-# 내일 수정 사항(25.05.12)
-# filedialog.askopenfile로 파일 선택 시 fomat이나 인코딩 등 다 선택됨 파일만 선택되게 로직 수정 해야함
-# pyinstaller로 exe 생성 후 포트폴리오에 preview로 올라가는지 test
 
 import xlwings as xw
 from tkinter import filedialog, messagebox, ttk
@@ -53,7 +50,7 @@ class unlockSApp:
         ttk.Button(root, text="보안 해제 시작", command=self.start_unlockS).pack(pady=20)
 
     def select_folder(self):
-        folder_path = filedialog.askopenfile(title="보안 해제할 파일 선택", initialdir=self.folder_path.get())
+        folder_path = filedialog.askopenfilename(title="보안 해제할 파일 선택", initialdir=self.folder_path.get(), filetypes=[("Excel files", "*.xlsx;*.xls")])
         if folder_path:
             self.folder_path.set(folder_path)
 

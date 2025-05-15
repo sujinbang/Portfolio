@@ -153,6 +153,7 @@ font-size: 14px;
 line-height: 1.5;
 }
 
+
 /* Skills */
 
 .skills-container {
@@ -192,12 +193,21 @@ line-height: 1.5;
 	background-color: #d8e6e7;
 }
 
-@media screen and (min-width: 961px) and (max-width: 1320px) {
-  .project-content {
-    font-size: 0.9rem;
-    padding: 0.5rem;
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
+
+/* Mobile Styles for table */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2616,6 +2626,10 @@ input, select, textarea {
 				padding: 0 2em 0 2em;
 			}
 
+			button {
+				padding: 0.5em 1em;
+			}	
+
 		/* Item */
 
 			.item {
@@ -2629,6 +2643,54 @@ input, select, textarea {
 				font-size: 1em;
 				padding: 0.5rem;
 			}
+
+			.modal-content {
+				width: 95%;
+				height: auto;
+				max-height: 90vh;
+				padding: 20px;
+				margin: 10% auto;
+				font-size: 0.9rem;
+			}
+
+			.modal-summary {
+				font-size: 0.9rem;
+			}
+
+			.modal-date {
+				font-size: 0.9rem;
+			}
+
+			.modal-preview {
+				width: 100%;
+				height: auto;
+				max-height: 200px;
+				font-size: 0.9rem;
+			}
+
+			.career-title {
+				font-size: 0.9rem; /* 모바일에서 폰트 크기 조정 */
+				/* text-align: center; */ /* 필요하다면 가운데 정렬도 고려 */
+			}
+
+			.career-content {
+				font-size: 0.9rem; /* 모바일에서 폰트 크기 조정 */
+				/* text-align: justify; */ /* 필요하다면 양쪽 정렬도 고려 */
+			}
+
+			.tag {
+				font-size: 0.9rem;
+			}
+
+			.skills-grid {
+				gap: 1rem;
+			}
+
+			.category {
+				font-size: 1rem;
+				text-align: left;
+			}
+
 
 		/* Icons */
 
@@ -2813,8 +2875,18 @@ input, select, textarea {
 				font-weight: 300;
 			}
 
+			h6 {
+				font-size: 0.8em;
+				letter-spacing: 0;
+				font-weight: 300;
+			}
+
 			.container {
 				padding: 0 15px 0 15px;
+			}
+
+			header > p {
+				margin: 1em 0 1em 0;
 			}
 
 		/* List */
@@ -2853,4 +2925,3 @@ input, select, textarea {
 				}
 
 	}
-
