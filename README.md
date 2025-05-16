@@ -25,3 +25,8 @@ Flask 실행
 ```shell
 python app.py
 ```
+
+## 💡 Mobile 버전 구축
+
+![image](https://github.com/user-attachments/assets/8f8aa875-ed26-4776-ba14-c0c311e294ab)
+
