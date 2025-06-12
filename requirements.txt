@@ -1,3 +1,4 @@
+gunicorn
 pip>=23.2
 attrs==24.2.0
 beautifulsoup4==4.13.4
