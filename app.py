@@ -177,10 +177,5 @@ def selenium_result():
     
     return render_template('webData/selenium_result.html', h1=h1, h1_body=h1_body, h2=h2, li_lists=li_list, screenshot_filename=screenshot_filename)
 
-# 실행파일 다운로드
-@app.route("/download_exe")
-def download_exe():
-    return send_file("data/unlockSApp.exe", mimetype='application/octet-stream', as_attachment=True)
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
