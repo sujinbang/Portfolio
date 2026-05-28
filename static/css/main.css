@@ -3024,3 +3024,80 @@ input, select, textarea {
 	margin-bottom: 10px;
 	text-align: left;
 }
+
+/* UI Screenshots Grid */
+.modal-ui-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 15px;
+	margin-top: 15px;
+}
+.modal-ui-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f9f9f9;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.modal-ui-item img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 6px;
+	border: 1px solid #eee;
+	transition: transform 0.3s ease;
+}
+.modal-ui-item img:hover {
+	transform: scale(1.05);
+}
+.modal-ui-item span {
+	font-size: 14px;
+	font-weight: 600;
+	color: #666;
+	margin-top: 8px;
+}
+
+/* Image Viewer Lightbox */
+.image-viewer-overlay {
+	display: none;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100vw; height: 100vh;
+	background: rgba(0, 0, 0, 0.85);
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+	cursor: zoom-out;
+}
+.image-viewer-content {
+	position: relative;
+	max-width: 90%;
+	max-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.image-viewer-content img {
+	max-width: 100%;
+	max-height: 85vh;
+	border-radius: 8px;
+	box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+	cursor: default;
+	transition: transform 0.3s ease;
+}
+.image-viewer-close {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	color: #fff;
+	font-size: 35px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+.image-viewer-close:hover {
+	color: #e27689;
+}

@@ -145,9 +145,9 @@ def selenium_result():
     # 크롤링 시작
     try:
         driver.get('https://github.com/sujinbang')
+        time.sleep(3) # 페이지 로딩 대기 (더 나은 방법은 WebDriverWait 사용)
         screenshot_filename = 'github_page_loaded.png'
         driver.save_screenshot(os.path.join(app.static_folder, screenshot_filename)) # static 폴더에 저장
-        time.sleep(3) # 페이지 로딩 대기 (더 나은 방법은 WebDriverWait 사용)
 
         # 메뉴 파싱
         html = driver.page_source
