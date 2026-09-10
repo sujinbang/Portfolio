@@ -225,7 +225,7 @@
 								<h3>말하는 일기장</h3>
 								<hr>
 								<p class="project-content">
-									사용자의 감정을 분석해주는 말하는 일기장
+									감정을 분석해주는 말하는 일기장
 								</p>
 								<br>
 								<button onclick="openModal('modal1')">더 알아보기</button>
@@ -269,10 +269,10 @@
 						</article>
 						<article class="item">
 							<header>
-								<h3>echarts 대시보드</h3>
+								<h3>IoT 성능 모니터링 (APM)</h3>
 								<hr>
 								<p class="project-content">
-									시각화에 주로 사용되는 차트 모음집
+									가상 IoT 환경의 서버 상태를 분석하는 실시간 모니터링 대시보드
 								</p>
 								<br>
 								<button onclick="openModal('modal5')">더 알아보기</button>
@@ -297,7 +297,7 @@
 								<h3>LLM/RAG 구현</h3>
 								<hr>
 								<p class="project-content">
-									pdf 파일 기반 분류 모델 구현
+									HuggingFace LLM(Qwen2.5-1.5B-Instruct) 기반 RAG
 								</p>
 								<br>
 								<button onclick="openModal('modal7')">더 알아보기</button>
@@ -305,10 +305,10 @@
 						</article>
 						<article class="item">
 							<header>
-								<h3>크롤러 개발</h3>
+								<h3>이커머스 데이터 파이프라인</h3>
 								<hr>
 								<p class="project-content">
-									Selenium & BeautifulSoup 기반 웹사이트 크롤링
+									DuckDB, dbt, Airflow를 활용한 로컬 데이터 엔지니어링 환경 구축
 								</p>
 								<br>
 								<button onclick="openModal('modal8')">더 알아보기</button>
@@ -334,6 +334,7 @@
 		<div class="modal-overlay" id="modal1">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal1')">&times;</span>
 					<div class="social-icons">
 						<h5>말하는 일기장
 							<a href="https://github.com/sujinbang/03_Final_Project" target="_blank" title="GitHub">
@@ -424,6 +425,7 @@
 		<div class="modal-overlay" id="modal2">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal2')">&times;</span>
 					<div class="social-icons">
 						<h5>포트폴리오 제작
 							<a href="https://github.com/sujinbang/Portfolio" target="_blank" title="GitHub">
@@ -492,6 +494,7 @@
 		<div class="modal-overlay" id="modal3">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal3')">&times;</span>
 					<div class="social-icons">
 						<h5>Easy-File-Utils
 							<a href="https://github.com/sujinbang/Easy-File-Utils" target="_blank" title="GitHub">
@@ -565,6 +568,7 @@
 		<div class="modal-overlay" id="modal4">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal4')">&times;</span>
 					<div class="social-icons">
 						<h5>Todolist-App (Daily Planner)
 							<a href="https://github.com/sujinbang/Todolist-App" target="_blank" title="GitHub">
@@ -575,8 +579,6 @@
 					<hr>
 					<div class="modal-date">
 						2026.05.26 ~ (개인 프로젝트)<br>
-						<a href="https://todolist-app-production-6236.up.railway.app/" target="_blank">📎 URL :
-							https://todolist-app-production-6236.up.railway.app/</a>
 					</div>
 					<br>
 					<div class="modal-title">
@@ -584,15 +586,16 @@
 						<hr>
 						<div class="modal-summary">
 							Todolist-App은 할 일 목록(Todo List), 루틴 관리(Routine Manager), 다이어리(Diary), 독서 기록(Reading Log) 기능을
-							제공하는 통합 라이프 매니징 애플리케이션입니다. React와 Firebase를 기반으로 실시간 데이터 동기화를 지원하며, Capacitor를 통해 웹뿐만 아니라
-							모바일(Android, iOS) 환경에서도 최적화된 사용자 경험을 제공합니다.
+							제공하는 통합 라이프 매니징 애플리케이션입니다. React와 Firebase를 기반으로 실시간 데이터 동기화를 지원합니다.
 						</div>
 						<br>
 						<h6>💡 Background</h6>
 						<hr>
 						<div class="modal-summary">
-							단순한 메모나 할 일 관리 도구만으로는 복잡한 현대인의 일상을 체계적으로 관리하기 어렵다는 문제점에서 출발했습니다. 루틴화된 습관, 매일의 감정 기록, 지식 습득을
-							위한 독서 기록 등을 별도의 앱이 아닌 하나의 플랫폼에서 유기적으로 관리함으로써, 사용자가 자신의 삶의 패턴을 더 깊이 이해하고 개선할 수 있도록 설계되었습니다.
+							단순한 메모나 할 일 관리 도구만으로는 복잡한 현대인의 일상을 체계적으로 관리하기 어렵다는 문제점에서 출발했습니다. 루틴화된 습관, 매일의 감정 기록, 지식
+							습득을
+							위한 독서 기록 등을 별도의 앱이 아닌 하나의 플랫폼에서 유기적으로 관리함으로써, 사용자가 자신의 삶의 패턴을 더 깊이 이해하고 개선할 수 있도록
+							설계되었습니다.
 						</div>
 						<br>
 						<h6>🔍 Meaning</h6>
@@ -602,7 +605,8 @@
 								class="modal-highlight">TodoList</span>,
 							<span class="modal-highlight">RoutineManager</span>, <span
 								class="modal-highlight">ReadingLog</span>,
-							<span class="modal-highlight">Diary</span> 컴포넌트를 탭 구조로 연결해 일상 관리 흐름을 한 곳에서 처리하도록 구현했습니다.<br>
+							<span class="modal-highlight">Diary</span> 컴포넌트를 탭 구조로 연결해 일상 관리 흐름을 한 곳에서 처리하도록
+							구현했습니다.<br>
 							Firebase Auth 로그인 후 Firestore의 사용자별 하위 컬렉션(<span class="modal-highlight">todos</span>,
 							<span class="modal-highlight">routines</span>, <span class="modal-highlight">books</span>,
 							<span class="modal-highlight">diaries</span>)을 실시간 구독하며, 루틴 데이터는 오늘 날짜 기준으로 할 일에 자동
@@ -613,8 +617,9 @@
 						<h6>⛏ Skills</h6>
 						<hr>
 						<div class="modal-summary">
-							React 19, TypeScript, Vite, Tailwind CSS, Motion, Lucide React, Firebase (Firestore &amp;
-							Auth), Capacitor, ESLint
+							React 19, TypeScript, Vite, Tailwind CSS, Motion, Lucide React, Firebase (Firestore
+							&amp;
+							Auth)
 						</div>
 						<br>
 						<h6>⚙ Setup & Usage</h6>
@@ -649,45 +654,33 @@
 							<div class="setup-content">
 								npm run dev
 							</div>
-
-
-							<div class="modal-summary-category"><i class="fas fa-mobile-alt"></i> 모바일 빌드 (Capacitor)
-							</div>
-
-							<div class="setup-step">1. 프로젝트를 빌드합니다.</div>
-							<div class="setup-content">
-								npm run build
-							</div>
-
-							<div class="setup-step">2. 네이티브 플랫폼에 동기화합니다.</div>
-							<div class="setup-content">
-								npx cap sync
-							</div>
-
-							<div class="setup-step">3. 각 플랫폼 개발 도구(Android Studio, Xcode)를 통해 실행합니다.</div>
-							<div class="setup-content">
-								npx cap open android<br>
-								npx cap open ios
-							</div>
 						</div>
 						<br>
 						<h6>📱 UI Screenshots</h6>
 						<hr>
 						<div class="modal-ui-grid">
 							<div class="modal-ui-item">
-								<img src="static/images/todolist/todolist_3.png" alt="로그인 화면" onclick="openImageViewer('static/images/todolist/todolist_3.png')" style="cursor: pointer;" />
+								<img src="static/images/todolist/todolist_3.png" alt="로그인 화면"
+									onclick="openImageViewer('static/images/todolist/todolist_3.png')"
+									style="cursor: pointer;" />
 								<span>로그인 화면</span>
 							</div>
 							<div class="modal-ui-item">
-								<img src="static/images/todolist/todolist_1.png" alt="일기장 화면" onclick="openImageViewer('static/images/todolist/todolist_1.png')" style="cursor: pointer;" />
+								<img src="static/images/todolist/todolist_1.png" alt="일기장 화면"
+									onclick="openImageViewer('static/images/todolist/todolist_1.png')"
+									style="cursor: pointer;" />
 								<span>일기장 화면</span>
 							</div>
 							<div class="modal-ui-item">
-								<img src="static/images/todolist/todolist_4.png" alt="루틴 관리 화면" onclick="openImageViewer('static/images/todolist/todolist_4.png')" style="cursor: pointer;" />
+								<img src="static/images/todolist/todolist_4.png" alt="루틴 관리 화면"
+									onclick="openImageViewer('static/images/todolist/todolist_4.png')"
+									style="cursor: pointer;" />
 								<span>루틴 관리 화면</span>
 							</div>
 							<div class="modal-ui-item">
-								<img src="static/images/todolist/todolist_2.png" alt="독서 기록 화면" onclick="openImageViewer('static/images/todolist/todolist_2.png')" style="cursor: pointer;" />
+								<img src="static/images/todolist/todolist_2.png" alt="독서 기록 화면"
+									onclick="openImageViewer('static/images/todolist/todolist_2.png')"
+									style="cursor: pointer;" />
 								<span>독서 기록 화면</span>
 							</div>
 						</div>
@@ -699,60 +692,61 @@
 		<div class="modal-overlay" id="modal5">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal5')">&times;</span>
 					<div class="social-icons">
-						<h5>echarts 대시보드
-							<a href="https://github.com/sujinbang/Echarts" target="_blank" title="GitHub">
+						<h5>실시간 IoT 서버 모니터링 대시보드
+							<a href="https://github.com/sujinbang/iot-monitor" target="_blank" title="GitHub">
 								<i class="fab fa-github"></i>
 							</a>
 						</h5>
 					</div>
 					<hr>
 					<div class="modal-date">
-						2025.04.15 ~ 2025.04.30 (1인 프로젝트)<br>
-						<a href="/echarts">📎 URL : echarts 대시보드 미리보기</a>
+						2026.09 ~ (개인 프로젝트)<br>
 					</div>
 					<br>
 					<div class="modal-title">
 						<h6>📌 Summary</h6>
 						<hr>
 						<div class="modal-summary">
-							본 프로젝트는 업무 중 대시보드 생성 시 편의를 위해 자주 쓰는 차트를 편하게 구현할 수 있도록 개발한 대시보드입니다.<br>
-							ECharts 라이브러리는 웹 기반 대시보드나 데이터 시각화를 할 때 차트의 종류가 많고 이벤트 처리가 쉬우며, tooltip 등 인터랙션 기능이 명확해서 이를
-							사용하였습니다.<br>
+							서버의 응답 지연과 장애 발생 여부를 실시간으로 감지하고 시각화하는 APM(애플리케이션 성능 모니터링) 대시보드입니다.<br>
+							가상 IoT 기기들의 트래픽을 처리하는 API 서버를 직접 구축하고, 헬스체크 봇(Worker)을 통해 수집된 데이터를 고급 시각화 라이브러리로 실시간 렌더링하도록 구현했습니다.
 						</div>
 						<br>
 						<h6>💡 Background</h6>
 						<hr>
 						<div class="modal-summary">
-							본 프로젝트는 일기장 서비스를 모바일 웹 환경에 최적화시켜 개발합니다.<br>
-							일기장 서비스는 사용자가 텍스트 또는 음성으로 입력하면 내용을 바탕으로 감성분석 및 키워드 분석을 제공하는 서비스입니다.<br>
-							말하는 일기장 서비스는 디자인을 고려하여 사용자가 위치한 날씨에 맞게 배경화면이 지정되도록 옵션을 추가하였습니다.
+							서버가 예기치 않게 느려지거나 에러를 반환할 때, 관리자가 이를 즉각적으로 인지할 수 있는 직관적인 시각화 도구가 필요합니다.<br>
+							단순한 차트 그리기를 넘어, '일부러 장애(지연/에러)를 발생시키는 가상 서버'를 만들고 이를 대시보드가 성공적으로 포착해내는지 테스트하는 실무 중심의 모니터링 시스템을 기획했습니다.
 						</div>
 						<br>
 						<h6>🔍 Meaning</h6>
 						<hr>
 						<div class="modal-summary">
-							ECharts의 다양한 커스터마이징 기능을 활용하며, 단순 차트 구현을 넘어 사용자 맞춤형 인터랙션과 디자인을 구성할 수 있게 되었습니다.<br>
-							단순한 시각화가 아닌, 의미 있는 흐름과 인사이트를 전달하는 디자인에 대해 고민하게 된 계기였습니다.<br>
-							단순한 기술 구현을 넘어서, 데이터를 직관적으로 전달하는 설계력과 사용자의 시선에서 정보를 배치하는 사고 방식을 배울 수 있었던 프로젝트였습니다.
+							주기적으로 상태를 묻는 Active 데이터와 실제 유저의 Passive 데이터를 분리 수집하여 DB에 적재하는 아키텍처를 직접 설계했습니다.<br>
+							2초마다 끝없이 쌓이는 데이터를 프론트엔드에서 부드럽게 렌더링하고, 장애 발생 시점(Error)을 차트 위에 눈에 띄게 표현함으로써 '실시간 데이터 처리'와 '정보 전달 설계력'을 모두 기를 수 있었습니다.
 						</div>
 						<br>
 						<h6>⛏ Skills</h6>
 						<hr>
 						<div class="modal-summary">
-							ECharts, HTML/CSS/JavaScript, Flask, Pandas, JSON
+							Node.js, Express, Next.js, SQLite, ECharts / ApexCharts
 						</div>
 						<br>
 						<h6>⚙ Setup & Usage</h6>
 						<hr>
 						<div class="modal-summary">
-							1) 환경 설정 파일 설치
+							<div class="setup-step">1. 가상 API 서버 실행 (포트 4000)</div>
 							<div class="setup-content">
-								pip install -r requirements.txt
+								cd target-api && node server.js
 							</div>
-							2) Flask 실행
+							<div class="setup-step">2. 헬스체크 워커 실행 (2초마다 모니터링 시작)</div>
 							<div class="setup-content">
-								python app.py
+								cd monitor-worker && node worker.js
+							</div>
+							<div class="setup-step">3. 프론트엔드 대시보드 실행 (포트 3000)</div>
+							<div class="setup-content">
+								cd dashboard && npm run dev
 							</div>
 						</div>
 					</div>
@@ -764,6 +758,7 @@
 		<div class="modal-overlay" id="modal6">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal6')">&times;</span>
 					<div class="social-icons">
 						<h5>TF-IDF 문자열 유사도 분석
 							<a href="https://bbangya22.tistory.com/entry/NLPML-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B8%B0%EB%B0%98-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC-%EB%B6%84%EB%A5%98-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B8"
@@ -792,18 +787,22 @@
 						<h6>💡 Background</h6>
 						<hr>
 						<div class="modal-summary">
-							업무 중 다양한 이슈(예: 버그 리포트, 개선 요청, 사용자 문의 등)가 텍스트 형태로 수집되는데, 이를 정확하게 카테고리화하지 않으면 우선순위나 담당자 지정에
+							업무 중 다양한 이슈(예: 버그 리포트, 개선 요청, 사용자 문의 등)가 텍스트 형태로 수집되는데, 이를 정확하게 카테고리화하지 않으면 우선순위나 담당자
+							지정에
 							혼선이 생겼습니다.<br>
-							기존에는 사람이 직접 분류하거나 키워드 기반 필터링을 했으나, 일관성과 효율성이 떨어지는 문제가 있었고, 이를 해결하고자 자연어 처리 기반 분류 모델을 도입하게
+							기존에는 사람이 직접 분류하거나 키워드 기반 필터링을 했으나, 일관성과 효율성이 떨어지는 문제가 있었고, 이를 해결하고자 자연어 처리 기반 분류 모델을
+							도입하게
 							되었습니다.
 						</div>
 						<br>
 						<h6>🔍 Meaning</h6>
 						<hr>
 						<div class="modal-summary">
-							이번 프로젝트를 통해 텍스트 데이터의 전처리, 벡터화, 모델 학습, 검증 등 머신러닝 전 과정을 실무 문제에 직접 적용해볼 수 있었습니다. 특히, 단순 키워드가 아닌
+							이번 프로젝트를 통해 텍스트 데이터의 전처리, 벡터화, 모델 학습, 검증 등 머신러닝 전 과정을 실무 문제에 직접 적용해볼 수 있었습니다. 특히, 단순
+							키워드가 아닌
 							문맥 기반 분류의 필요성을 체감하며, 데이터 품질과 전처리의 중요성을 절실히 느꼈습니다.<br>
-							또한, 모델 정확도를 높이기 위해 다양한 알고리즘을 실험해보고 하이퍼파라미터 튜닝도 적용하면서, 실험적 사고와 분석 역량이 한층 강화되었습니다. 무엇보다 실제 업무
+							또한, 모델 정확도를 높이기 위해 다양한 알고리즘을 실험해보고 하이퍼파라미터 튜닝도 적용하면서, 실험적 사고와 분석 역량이 한층 강화되었습니다. 무엇보다 실제
+							업무
 							효율 향상에 기여할 수 있었던 점에서 기술의 실용성과 의미를 깊이 있게 느낄 수 있었습니다.
 						</div>
 						<br>
@@ -824,6 +823,7 @@
 		<div class="modal-overlay" id="modal7">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal7')">&times;</span>
 					<div class="social-icons">
 						<h5>AI 기반 분리배출 가이드
 							<a href="https://github.com/sujinbang/Classification" target="_blank" title="GitHub">
@@ -857,9 +857,11 @@
 							Flask API에서 <span class="modal-highlight">/classify</span>와 <span
 								class="modal-highlight">/classify_llm</span> 엔드포인트를 분리해
 							ML 예측과 LLM/RAG 응답을 각각 호출할 수 있도록 구성했습니다.<br>
-							RandomForestClassifier는 <span class="modal-highlight">waste_train.xlsx</span> 데이터를 기반으로 품목
+							RandomForestClassifier는 <span class="modal-highlight">waste_train.xlsx</span> 데이터를 기반으로
+							품목
 							카테고리를 분류하고,
-							LangChain·ChromaDB 기반 RAG는 <span class="modal-highlight">waste_train.pdf</span> 문서를 검색해 분리배출
+							LangChain·ChromaDB 기반 RAG는 <span class="modal-highlight">waste_train.pdf</span> 문서를 검색해
+							분리배출
 							가이드를 생성합니다.
 						</div>
 						<br>
@@ -874,14 +876,7 @@
 						<hr>
 						<div class="modal-summary">
 							<div class="setup-content">
-								conda create -n venv python=3.10<br>
-								conda activate venv<br>
-								pip install flask pandas scikit-learn openpyxl
-							</div>
-							<br>
-							<div class="setup-content">
-								pip install transformers accelerate bitsandbytes sentence-transformers
-								langchain-huggingface langchain-community langchain-text-splitters pypdf chromadb nvitop
+								source venv/bin/activate
 							</div>
 							<br>
 							<div class="setup-content">
@@ -902,51 +897,45 @@
 		<div class="modal-overlay" id="modal8">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal8')">&times;</span>
 					<div class="social-icons">
-						<h5>크롤러 개발
+						<h5>이커머스 데이터 파이프라인
+							<a href="https://github.com/sujinbang/ecommerce_pipeline" target="_blank" title="GitHub">
+								<i class="fab fa-github"></i>
+							</a>
 						</h5>
 					</div>
 					<hr>
 					<div class="modal-date">
-						2025.05.01 ~ 2025.05.14 (1인 프로젝트)<br>
-						<a href="#Preview">📎 Preview에서 기능 써보기</a>
+						2026.09.10 ~ (개인 프로젝트)<br>
 					</div>
 					<br>
 					<div class="modal-title">
 						<h6>📌 Summary</h6>
 						<hr>
 						<div class="modal-summary">
-							본 프로젝트는 특정 웹사이트에서 필요한 정보를 자동으로 수집 및 저장하기 위해 진행하였습니다.<br>
-							BeautifulSoup과 Selenium 라이브러리 기반 웹페이지 요청 및 HTML 파싱을 자동화하여 원하는 데이터를 추출하는 기능을 구현하였습니다.
+							이 프로젝트는 클라우드 비용 없이, 100% 로컬 컴퓨터 안에서 최신 데이터 엔지니어링 파이프라인(Modern Data Stack)을 경험해보기 위해 만들어진 실습 프로젝트입니다.<br>
+							가짜 이커머스 데이터를 생성하고 DuckDB, dbt, Airflow, Streamlit을 활용하여 데이터 추출(E)부터 적재(L), 변환(T), 시각화까지의 전체 ELT 파이프라인을 구축했습니다.
 						</div>
 						<br>
 						<h6>💡 Background</h6>
 						<hr>
 						<div class="modal-summary">
-							웹상에는 다양한 정보가 존재하지만, 이를 수동으로 수집하고 정리하는 것은 많은 시간과 노력이 소요됩니다.<br>
-							반복적인 데이터 수집 작업을 자동화하여 정확하고 신속한 정보 획득을 목표로 크롤러 개발이 필요했습니다.<br>
-							특히, 실시간 데이터 분석, 가격 비교, 콘텐츠 수집 등 특정 목적에 맞는 데이터 확보가 중요해지면서 크롤러의 역할이 강조되고 있습니다.
+							단순히 대시보드(Streamlit)에서 원본 데이터를 직접 쿼리하지 않고 데이터 파이프라인을 두는 핵심 이유를 직접 체감하기 위해 기획했습니다.<br>
+							대용량 데이터를 다룰 때의 성능(서버 비용) 최적화, 정제된 데이터(Mart)의 팀별 일관성 유지, 그리고 오류 방지를 위한 파이프라인 설계의 필요성을 학습하고 적용하는 것이 주된 목표였습니다.
 						</div>
 						<br>
 						<h6>🔍 Meaning</h6>
 						<hr>
 						<div class="modal-summary">
-							크롤러를 직접 개발하면서 단순한 자동화 이상의 가치를 느낄 수 있었습니다.<br>
-							처음에는 단순히 데이터를 수집하는 도구라고 생각했지만, 웹 구조 분석, 데이터 정제, 예외 처리 등 다양한 기술이 복합적으로 요구된다는 점에서 개발 역량이 전반적으로
-							향상되는 경험이었습니다.<br>
-							무엇보다도, 단순한 코드 작성이 아닌 실질적인 문제 해결 도구로써의 프로그래밍을 체감할 수 있는 좋은 기회였습니다.
-						</div>
-						<h6 id="Preview">📝 Preview </h6>
-						<hr>
-						<div class="modal-summary">
-							<button onclick="openWindow()">네이버 API 활용</button>
-							<button onclick="openWindow2()">Selenium 활용</button>
+							Airflow(Cosmos)와 dbt를 활용해 파이프라인을 자동화하고, DuckDB를 통해 로컬에서 빠르고 가볍게 데이터 웨어하우스를 구성하는 방법을 익힐 수 있었습니다.<br>
+							지저분한 원시 데이터가 어떻게 비즈니스 지표(Mart)로 변환되는지 ELT 과정을 직접 구현하며 데이터 엔지니어링의 전체적인 데이터 흐름(Data Lineage)을 이해하는 뜻깊은 경험이었습니다.
 						</div>
 						<br>
 						<h6>⛏ Skills</h6>
 						<hr>
 						<div class="modal-summary">
-							Python, BeautifulSoup, Selenium, XPath, CSS Selector
+							Python, DuckDB, dbt, Apache Airflow, Cosmos, Streamlit, SQL
 						</div>
 						<br>
 						<h6>⚙ Setup & Usage</h6>
@@ -954,22 +943,25 @@
 						<div class="modal-summary">
 							<div class="modal-summary-category"><i class="fas fa-check-circle"></i> 필수 요구사항</div>
 							<ul class="modal-summary-list">
-								<li>Python 3.8 이상</li>
-								<li>Chrome 웹 브라우저 (Selenium 크롤링 시 필수)</li>
+								<li>Python 3.x 가상환경 설정 완료</li>
 							</ul>
 
-							<div class="modal-summary-category"><i class="fas fa-terminal"></i> 설치 및 실행 방법</div>
-							<div class="setup-step">1. 필수 패키지 설치</div>
+							<div class="modal-summary-category"><i class="fas fa-terminal"></i> 실행 가이드</div>
+							<div class="setup-step">1. 초기 데이터 생성 및 DuckDB 적재</div>
 							<div class="setup-content">
-								pip install selenium beautifulsoup4 pandas requests
+								python3 generate_mock_data.py<br>
+								python3 load_data_to_duckdb.py
 							</div>
 
-							<div class="setup-step">2. 로컬 실행</div>
+							<div class="setup-step">2. Airflow 파이프라인 자동화 켜기</div>
 							<div class="setup-content">
-								python app.py
+								export AIRFLOW_HOME=$(pwd)/airflow<br>
+								airflow standalone
 							</div>
-							<div class="setup-note">
-								*참고: 포트폴리오 웹사이트 실행 후 'Selenium 활용' 프리뷰 창에서 크롤링을 테스트할 수 있습니다.*
+
+							<div class="setup-step">3. Streamlit 대시보드로 결과 시각화하기</div>
+							<div class="setup-content">
+								python3 -m streamlit run dashboard.py
 							</div>
 						</div>
 					</div>
@@ -980,6 +972,7 @@
 		<div class="modal-overlay" id="modal9">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal9')">&times;</span>
 					<div class="social-icons">
 						<h5>QGIS 플러그인 개발
 							<a href="https://github.com/sujinbang/pyqgis/tree/main/qgis-plugin" target="_blank"
@@ -1018,12 +1011,16 @@
 						<h6>🔍 Meaning</h6>
 						<hr>
 						<div class="modal-summary">
-							<span class="modal-highlight">Apply Style</span>은 선택한 벡터 레이어의 선 너비와 라벨 필드, 글자 크기, 색상 등을 일괄
+							<span class="modal-highlight">Apply Style</span>은 선택한 벡터 레이어의 선 너비와 라벨 필드, 글자 크기, 색상 등을
+							일괄
 							적용합니다.<br>
-							<span class="modal-highlight">Export Geoquery</span>는 QGIS expression으로 선택한 피처만 Shapefile로
+							<span class="modal-highlight">Export Geoquery</span>는 QGIS expression으로 선택한 피처만
+							Shapefile로
 							내보내고 결과 레이어를 다시 추가합니다.<br>
-							<span class="modal-highlight">Save Attributes</span>는 선택한 레이어의 필드와 피처 속성을 CSV 파일로 저장합니다.<br>
-							<span class="modal-highlight">LinkSyncFlasher</span>는 선택된 소스 레이어의 ID를 기준으로 관련 레이어의 피처를 찾아
+							<span class="modal-highlight">Save Attributes</span>는 선택한 레이어의 필드와 피처 속성을 CSV 파일로
+							저장합니다.<br>
+							<span class="modal-highlight">LinkSyncFlasher</span>는 선택된 소스 레이어의 ID를 기준으로 관련 레이어의 피처를
+							찾아
 							색상별로 flash 처리하고,
 							End 키 단축키로 드래그 선택 도구를 켜고 끌 수 있도록 구현했습니다.
 						</div>
@@ -1031,7 +1028,8 @@
 						<h6>⛏ Skills</h6>
 						<hr>
 						<div class="modal-summary">
-							Python, PyQGIS, QGIS Plugin Builder, PyQt5, Qt Designer, QgsProject, QgsVectorFileWriter,
+							Python, PyQGIS, QGIS Plugin Builder, PyQt5, Qt Designer, QgsProject,
+							QgsVectorFileWriter,
 							QgsFeatureRequest, QgsRubberBand, QGIS Expression
 						</div>
 						<br>
@@ -1131,6 +1129,7 @@
 		<div class="modal-overlay" id="modal10">
 			<div class="modal">
 				<div class="modal-content">
+					<span class="modal-close-icon" onclick="closeModal('modal10')">&times;</span>
 
 					<div class="page" id="page1">
 						<div class="modal-title">
@@ -1311,19 +1310,22 @@
 							Navkingdom 내비게이션 (NPND) / BMW 내비게이션 (MGU) / Benz 내비게이션 (NTG6,7)<br>
 							<br>
 							1. 대용량 공간 데이터 처리 및 Converting<br>
-							- 주요 업무 : 전국 21,636 도엽으로 세분화된 공간 정보(dbf, shx, shp)를 활용하여 전용 개발 툴로 도로·빌딩·터널 등 3D 데이터로 가공 및
+							- 주요 업무 : 전국 21,636 도엽으로 세분화된 공간 정보(dbf, shx, shp)를 활용하여 전용 개발 툴로 도로·빌딩·터널 등 3D 데이터로 가공
+							및
 							변환<br>
 							<hr>
 							2. 데이터 품질 검수 및 오류 분석<br>
 							- 주요 업무 : 다양한 내비게이션 플랫폼(Navkingdom, BMW, Benz)에서의 3D 공간 데이터 오류 검출 및 수정<br>
 							<hr>
 							3. 툴 개선 기여 및 협업<br>
-							- 주요 업무 : PM 및 개발팀과 협업하여 데이터 가공 툴 개선 아이디어 제안 및 기능 개선에 참여, 프로젝트 일정 관리 및 우선순위조정으로 효율성 제고<br>
+							- 주요 업무 : PM 및 개발팀과 협업하여 데이터 가공 툴 개선 아이디어 제안 및 기능 개선에 참여, 프로젝트 일정 관리 및 우선순위조정으로 효율성
+							제고<br>
 							<hr>
 							4. 업무 프로세스 표준화 및 문서화<br>
 							- 주요 업무 : 프로젝트 중 반복 발생 이슈 및 해결 방안을 절차서로 문서화하여 팀 내 지식 공유 및 업무 효율성 향상<br>
 							<hr>
-							기술 스택 : Shapefile (dbf, shx, shp), 데이터 전처리 및 가공, 품질 검수, 프로젝트 일정 관리, Jira/Confluence 사용 경험,
+							기술 스택 : Shapefile (dbf, shx, shp), 데이터 전처리 및 가공, 품질 검수, 프로젝트 일정 관리, Jira/Confluence 사용
+							경험,
 							문서화 및 절차서 작성
 						</div>
 					</div>

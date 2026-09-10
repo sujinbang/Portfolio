@@ -63,12 +63,35 @@ padding: 60px;
 border-radius: 10px;
 overflow-y: auto;
 box-sizing: border-box;
+position: relative;
 }
 
 .close-btn {
 margin-top: 15px;
 justify-content: flex-end;
 appearance: auto;
+}
+
+.modal-close-icon {
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #aaa;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 1;
+	border: none;
+	background: none;
+	padding: 0;
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .page {
@@ -123,14 +146,17 @@ height: 300px;
 
 /* project content */
 .project-content {
-font-size: 16px;
-font-weight: bold;
-flex: 1 1 200px; /* 최소 너비 200px을 유지, 그 이하로 줄어들면 다음 줄로 */
-min-width: 200px;
-padding: 1rem;
-background: #f5f5f5;
-text-align: center;
-border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	flex: 1 1 auto; /* Allow flexible height inside column */
+	padding: 1rem;
+	background: #f5f5f5;
+	text-align: center;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
 }
 
 .contact-item {
@@ -2214,6 +2240,28 @@ input, select, textarea {
 				font-size: 1em;
 			}
 
+		
+		/* Information Items Fixed Size */
+		#information .item header {
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 0;
+		}
+
+		/* Project Items Fixed Size */
+		#project .item header {
+			height: 270px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#project .item header br {
+			display: none;
+		}
+
 /* Icons */
 
 	.icon {
@@ -3100,4 +3148,34 @@ input, select, textarea {
 }
 .image-viewer-close:hover {
 	color: #e27689;
+}
+
+@media screen and (max-width: 736px) {
+	
+	/* Information Items Mobile Size */
+	#information .item header {
+		height: 50px;
+	}
+
+	/* Project Items Mobile Size */
+	#project .item header {
+		height: 150px;
+		padding: 1rem;
+	}
+
+	#project .project-content {
+		padding: 0.5rem;
+		margin: 5px 0;
+		font-size: 14px;
+	}
+
+	#project .item header h3 {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+
+	#project .item header button {
+		font-size: 14px;
+		padding: 0.3em 0.8em;
+	}
 }
