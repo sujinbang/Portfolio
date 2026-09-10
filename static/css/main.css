@@ -3178,4 +3178,8 @@ input, select, textarea {
 		font-size: 14px;
 		padding: 0.3em 0.8em;
 	}
+
+	.modal-ui-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
