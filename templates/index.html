@@ -723,6 +723,23 @@
 							<span class="modal-highlight">2. 실시간 장애 포착 시각화 (APM)</span><br>
 							- 지속적으로 쌓이는 시계열 데이터를 ApexCharts 등을 활용해 부드럽게 렌더링하고, 서버 타임아웃 및 장애 발생 시점을 차트 상에 직관적으로 강조 표시하여 즉각적인 장애 인지 가능
 						</div>
+						<br>
+						<h6>⚙ Setup & Usage</h6>
+						<hr>
+						<div class="modal-summary">
+							<div class="setup-step">1. 가상 API 서버 실행 (포트 4000)</div>
+							<div class="setup-content">
+								cd target-api && node server.js
+							</div>
+							<div class="setup-step">2. 헬스체크 워커 실행 (2초마다 모니터링 시작)</div>
+							<div class="setup-content">
+								cd monitor-worker && node worker.js
+							</div>
+							<div class="setup-step">3. 프론트엔드 대시보드 실행 (포트 3000)</div>
+							<div class="setup-content">
+								cd dashboard && npm run dev
+							</div>
+						</div>
 					</div>
 
 					<button class="close-btn" onclick="closeModal('modal5')">닫기</button>
@@ -934,6 +951,33 @@
 							- <strong>락 충돌 방지:</strong> DuckDB의 단일 쓰기(Single-write) 제약을 고려해 Airflow의 `max_active_runs`와 `threads`를 제어하여 동시성 충돌 방지 및 `retries`와 `exponential backoff`로 일시적 실패 흡수<br>
 							- <strong>실행 환경 자동화:</strong> DAG, profiles, 스크립트의 절대경로 하드코딩을 제거하고 Makefile 및 requirements.txt를 통해 단일 명령어로 실행 환경이 고정·재현되도록 패키징
 						</div>
+						<br>
+						<h6>⚙ Setup & Usage</h6>
+						<hr>
+						<div class="modal-summary">
+							<div class="modal-summary-category"><i class="fas fa-check-circle"></i> 필수 요구사항</div>
+							<ul class="modal-summary-list">
+								<li>Python 3.x 가상환경 설정 완료</li>
+							</ul>
+
+							<div class="modal-summary-category"><i class="fas fa-terminal"></i> 실행 가이드</div>
+							<div class="setup-step">1. 초기 데이터 생성 및 DuckDB 적재</div>
+							<div class="setup-content">
+								python3 generate_mock_data.py<br>
+								python3 load_data_to_duckdb.py
+							</div>
+
+							<div class="setup-step">2. Airflow 파이프라인 자동화 켜기</div>
+							<div class="setup-content">
+								export AIRFLOW_HOME=$(pwd)/airflow<br>
+								airflow standalone
+							</div>
+
+							<div class="setup-step">3. Streamlit 대시보드로 결과 시각화하기</div>
+							<div class="setup-content">
+								python3 -m streamlit run dashboard.py
+							</div>
+						</div>
 					</div>
 					<button class="close-btn" onclick="closeModal('modal8')">닫기</button>
 				</div>
@@ -981,6 +1025,27 @@
 							- <strong>save_attributes:</strong> 선택 레이어의 속성 테이블 데이터 CSV 추출/저장 자동화<br>
 							- <strong>export_geoquery:</strong> 특정 공간 질의(Expression)에 일치하는 피처만 별도 레이어/Shapefile로 추출<br>
 							- <strong>link_sync_flasher:</strong> 속성 ID를 기준으로 연관된 다중 레이어 간의 피처를 한 번에 찾아 시각적(Flasher)으로 연동 및 강조 표시 (End 키 단축키 바인딩 포함)
+						</div>
+						<br>
+						<h6>⚙ Setup & Usage</h6>
+						<hr>
+						<div class="modal-summary">
+							<div class="setup-content">
+								git clone https://github.com/sujinbang/pyqgis.git<br>
+								cd pyqgis/qgis-plugin
+							</div>
+							<br>
+							<div class="setup-content">
+								C:\Users\사용자\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins
+							</div>
+							<br>
+							<div class="setup-content">
+								pyrcc5 resources.qrc -o resources.py
+							</div>
+							<br>
+							<div class="modal-summary">
+								QGIS 플러그인 폴더에 원하는 플러그인 디렉터리를 복사한 뒤 QGIS에서 플러그인을 활성화하여 사용합니다.
+							</div>
 						</div>
 					</div>
 					<button class="close-btn" onclick="closeModal('modal9')">닫기</button>
