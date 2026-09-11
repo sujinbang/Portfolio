@@ -705,51 +705,23 @@
 					</div>
 					<br>
 					<div class="modal-title">
-						<h6>📌 Summary</h6>
+						<h6>📌 Summary & Architecture</h6>
 						<hr>
 						<div class="modal-summary">
-							서버의 응답 지연과 장애 발생 여부를 실시간으로 감지하고 시각화하는 APM(애플리케이션 성능 모니터링) 대시보드입니다.<br>
-							가상 IoT 기기들의 트래픽을 처리하는 API 서버를 직접 구축하고, 헬스체크 봇(Worker)을 통해 수집된 데이터를 고급 시각화 라이브러리로 실시간 렌더링하도록
-							구현했습니다.
+							<span class="modal-highlight">3-Tier 컴포넌트 기반 실시간 모니터링 시스템</span><br>
+							- <strong>가상 IoT 트래픽 생성기:</strong> 고의적인 응답 지연과 에러를 반환하는 테스트 API 서버<br>
+							- <strong>헬스체크 워커(Worker):</strong> 2초 주기로 상태를 폴링(Polling)하는 백그라운드 수집기<br>
+							- <strong>시각화 대시보드:</strong> 실시간 메트릭을 사용자에게 보여주는 프론트엔드 환경
 						</div>
 						<br>
-						<h6>💡 Background</h6>
+						<h6>🛠️ TroubleShooting & Deep Dive</h6>
 						<hr>
 						<div class="modal-summary">
-							서버가 예기치 않게 느려지거나 에러를 반환할 때, 관리자가 이를 즉각적으로 인지할 수 있는 직관적인 시각화 도구가 필요합니다.<br>
-							단순한 차트 그리기를 넘어, '일부러 장애(지연/에러)를 발생시키는 가상 서버'를 만들고 이를 대시보드가 성공적으로 포착해내는지 테스트하는 실무 중심의 모니터링
-							시스템을 기획했습니다.
-						</div>
-						<br>
-						<h6>🔍 Meaning</h6>
-						<hr>
-						<div class="modal-summary">
-							주기적으로 상태를 묻는 Active 데이터와 실제 유저의 Passive 데이터를 분리 수집하여 DB에 적재하는 아키텍처를 직접 설계했습니다.<br>
-							2초마다 끝없이 쌓이는 데이터를 프론트엔드에서 부드럽게 렌더링하고, 장애 발생 시점(Error)을 차트 위에 눈에 띄게 표현함으로써 '실시간 데이터 처리'와 '정보
-							전달 설계력'을 모두 기를 수 있었습니다.
-						</div>
-						<br>
-						<h6>⛏ Skills</h6>
-						<hr>
-						<div class="modal-summary">
-							Node.js, Express, Next.js, SQLite, ECharts / ApexCharts
-						</div>
-						<br>
-						<h6>⚙ Setup & Usage</h6>
-						<hr>
-						<div class="modal-summary">
-							<div class="setup-step">1. 가상 API 서버 실행 (포트 4000)</div>
-							<div class="setup-content">
-								cd target-api && node server.js
-							</div>
-							<div class="setup-step">2. 헬스체크 워커 실행 (2초마다 모니터링 시작)</div>
-							<div class="setup-content">
-								cd monitor-worker && node worker.js
-							</div>
-							<div class="setup-step">3. 프론트엔드 대시보드 실행 (포트 3000)</div>
-							<div class="setup-content">
-								cd dashboard && npm run dev
-							</div>
+							<span class="modal-highlight">1. 시계열 메트릭 수집 및 적재 구조 구현</span><br>
+							- 서버의 응답 지연(Latency) 시간과 HTTP 상태 코드(Success/Fail)를 SQLite에 시계열로 적재하고, 이를 프론트엔드 대시보드에서 즉각 조회하는 데이터 수집(Metric Collection) 파이프라인 구현
+							<br><br>
+							<span class="modal-highlight">2. 실시간 장애 포착 시각화 (APM)</span><br>
+							- 지속적으로 쌓이는 시계열 데이터를 ApexCharts 등을 활용해 부드럽게 렌더링하고, 서버 타임아웃 및 장애 발생 시점을 차트 상에 직관적으로 강조 표시하여 즉각적인 장애 인지 가능
 						</div>
 					</div>
 
@@ -936,63 +908,31 @@
 					</div>
 					<br>
 					<div class="modal-title">
-						<h6>📌 Summary</h6>
+						<h6>📌 Summary & Key Features</h6>
 						<hr>
 						<div class="modal-summary">
-							이 프로젝트는 클라우드 비용 없이, 100% 로컬 컴퓨터 안에서 최신 데이터 엔지니어링 파이프라인(Modern Data Stack)을 경험해보기 위해 만들어진 실습
-							프로젝트입니다.<br>
-							가짜 이커머스 데이터를 생성하고 DuckDB, dbt, Airflow, Streamlit을 활용하여 데이터 추출(E)부터 적재(L), 변환(T), 시각화까지의 전체
-							ELT 파이프라인을 구축했습니다.
+							<span class="modal-highlight">데이터 파이프라인 (Modern Data Stack) 아키텍처 구성</span><br>
+							- 가짜 데이터 생성 → DuckDB 적재 → dbt 변환(Staging/Intermediate/Marts) → Streamlit 서빙까지 로컬 환경 내 ELT 파이프라인 구축<br>
+							- Cosmos 라이브러리를 활용해 dbt 프로젝트를 Airflow DAG 태스크로 자동 변환 및 오케스트레이션
 						</div>
 						<br>
-						<h6>💡 Background</h6>
+						<h6>🛠️ TroubleShooting & Deep Dive</h6>
 						<hr>
 						<div class="modal-summary">
-							단순히 대시보드(Streamlit)에서 원본 데이터를 직접 쿼리하지 않고 데이터 파이프라인을 두는 핵심 이유를 직접 체감하기 위해 기획했습니다.<br>
-							대용량 데이터를 다룰 때의 성능(서버 비용) 최적화, 정제된 데이터(Mart)의 팀별 일관성 유지, 그리고 오류 방지를 위한 파이프라인 설계의 필요성을 학습하고
-							적용하는 것이 주된 목표였습니다.
-						</div>
-						<br>
-						<h6>🔍 Meaning</h6>
-						<hr>
-						<div class="modal-summary">
-							Airflow(Cosmos)와 dbt를 활용해 파이프라인을 자동화하고, DuckDB를 통해 로컬에서 빠르고 가볍게 데이터 웨어하우스를 구성하는 방법을 익힐 수
-							있었습니다.<br>
-							지저분한 원시 데이터가 어떻게 비즈니스 지표(Mart)로 변환되는지 ELT 과정을 직접 구현하며 데이터 엔지니어링의 전체적인 데이터 흐름(Data Lineage)을
-							이해하는 뜻깊은 경험이었습니다.
-						</div>
-						<br>
-						<h6>⛏ Skills</h6>
-						<hr>
-						<div class="modal-summary">
-							Python, DuckDB, dbt, Apache Airflow, Cosmos, Streamlit, SQL
-						</div>
-						<br>
-						<h6>⚙ Setup & Usage</h6>
-						<hr>
-						<div class="modal-summary">
-							<div class="modal-summary-category"><i class="fas fa-check-circle"></i> 필수 요구사항</div>
-							<ul class="modal-summary-list">
-								<li>Python 3.x 가상환경 설정 완료</li>
-							</ul>
-
-							<div class="modal-summary-category"><i class="fas fa-terminal"></i> 실행 가이드</div>
-							<div class="setup-step">1. 초기 데이터 생성 및 DuckDB 적재</div>
-							<div class="setup-content">
-								python3 generate_mock_data.py<br>
-								python3 load_data_to_duckdb.py
-							</div>
-
-							<div class="setup-step">2. Airflow 파이프라인 자동화 켜기</div>
-							<div class="setup-content">
-								export AIRFLOW_HOME=$(pwd)/airflow<br>
-								airflow standalone
-							</div>
-
-							<div class="setup-step">3. Streamlit 대시보드로 결과 시각화하기</div>
-							<div class="setup-content">
-								python3 -m streamlit run dashboard.py
-							</div>
+							<span class="modal-highlight">1. Fan-out 데이터 중복 집계 결함 탐지 및 구조적 해결</span><br>
+							- <strong>문제:</strong> 일자·기기별 매출 집계 시, 사용자 로그 데이터 조인 과정에서 1:N 관계로 인한 Fan-out 중복 집계 발생 확인. 원본에 이미 중복 로그가 존재했으나 주문 건과 겹치지 않아 우연히 결과가 맞았던 잠재적 데이터 정합성 결함 탐지<br>
+							- <strong>검증:</strong> 재현 테스트를 통해 특정 일자에서 24,600원의 매출이 과대 계상됨을 데이터로 증명<br>
+							- <strong>해결:</strong> 원본 로그를 `user-day` 그레인(grain) 수준으로 사전 집계하는 Intermediate(중간 계층) 모델을 신설하여 조인 전 중복을 차단하는 구조적 해결 적용
+							<br><br>
+							<span class="modal-highlight">2. 커스텀 Generic Test 기반 데이터 정합성 보장</span><br>
+							- 집계 오차가 발생하더라도 주문 건수는 정상값을 유지하고 매출만 부풀려지는 Fan-out의 특성을 고려하여, Mart 집계값과 원본 값을 직접 대조하는 커스텀 Generic Test 구현<br>
+							- Cosmos가 Singular Test를 DAG 태스크로 자동 생성하지 못해 스케줄러에서 누락되는 이슈를 발견하고, 이를 모델 연결형 Generic Test로 전환하여 Airflow 파이프라인 내 테스트 실행 보장
+							<br><br>
+							<span class="modal-highlight">3. 파이프라인 안정성 및 최적화 강화</span><br>
+							- <strong>데이터 품질:</strong> unique, not_null, 허용값, 범위 검증 등 데이터 품질 테스트 30개를 파이프라인에 편성. 파싱 실패 유입 데이터는 `warn severity`로 설정해 파이프라인 중단 없이 결함을 감지<br>
+							- <strong>비용 최적화:</strong> Mart 테이블을 증분 모델(delete+insert)로 전환하고 lookback 구간을 재집계하도록 설정하여 지연 도착(Late-arriving) 데이터를 흡수하면서도 전체 테이블 재생성 비용(Full Refresh) 제거<br>
+							- <strong>락 충돌 방지:</strong> DuckDB의 단일 쓰기(Single-write) 제약을 고려해 Airflow의 `max_active_runs`와 `threads`를 제어하여 동시성 충돌 방지 및 `retries`와 `exponential backoff`로 일시적 실패 흡수<br>
+							- <strong>실행 환경 자동화:</strong> DAG, profiles, 스크립트의 절대경로 하드코딩을 제거하고 Makefile 및 requirements.txt를 통해 단일 명령어로 실행 환경이 고정·재현되도록 패키징
 						</div>
 					</div>
 					<button class="close-btn" onclick="closeModal('modal8')">닫기</button>
@@ -1017,71 +957,30 @@
 					</div>
 					<br>
 					<div class="modal-title">
-						<h6>📌 Summary</h6>
+						<h6>📌 Summary & Key Features</h6>
 						<hr>
 						<div class="modal-summary">
-							QGIS 작업 중 반복적으로 수행하는 벡터 레이어 스타일 적용, 속성 저장, 공간 쿼리 내보내기, 연관 객체 확인 작업을 자동화하기 위한 PyQGIS 플러그인
-							모음입니다.<br>
-							<span class="modal-highlight">Apply Style</span>, <span class="modal-highlight">Export
-								Geoquery</span>,
-							<span class="modal-highlight">Save Attributes</span>, <span
-								class="modal-highlight">LinkSyncFlasher</span>
-							플러그인을 제작해 QGIS 내부에서 바로 사용할 수 있도록 구성했습니다.
+							<span class="modal-highlight">공간데이터 자동 처리 파이프라인 및 QGIS 자동화 도구 구축</span><br>
+							- 공공데이터포털 고속도로 노선 중심선 좌표 데이터(전국 108개 노선, 100m 간격) 대상 `CSV → 좌표 변환 → LineString 생성 → 노선별 Shapefile 분할` 배치 처리 파이프라인 구현<br>
+							- QGIS 환경에서 검수 및 편집 반복 작업을 자동화하는 PyQGIS 기반 커스텀 알고리즘 및 플러그인 4종 개발
 						</div>
 						<br>
-						<h6>💡 Background</h6>
+						<h6>🛠️ TroubleShooting & Deep Dive</h6>
 						<hr>
 						<div class="modal-summary">
-							정밀도로지도 품질검사와 공간데이터 편집 업무에서는 레이어별 심볼/라벨 설정, 속성 CSV 추출, 조건식 기반 피처 추출, 관련 레이어 간 ID 확인이 자주
-							발생합니다.<br>
-							수작업으로 처리하면 시간이 오래 걸리고 누락 위험이 커지기 때문에, QGIS의 Python API와 PyQt UI를 활용해 반복 작업을 플러그인 형태로
-							자동화했습니다.
-						</div>
-						<br>
-						<h6>🔍 Meaning</h6>
-						<hr>
-						<div class="modal-summary">
-							<span class="modal-highlight">Apply Style</span>은 선택한 벡터 레이어의 선 너비와 라벨 필드, 글자 크기, 색상 등을
-							일괄
-							적용합니다.<br>
-							<span class="modal-highlight">Export Geoquery</span>는 QGIS expression으로 선택한 피처만
-							Shapefile로
-							내보내고 결과 레이어를 다시 추가합니다.<br>
-							<span class="modal-highlight">Save Attributes</span>는 선택한 레이어의 필드와 피처 속성을 CSV 파일로
-							저장합니다.<br>
-							<span class="modal-highlight">LinkSyncFlasher</span>는 선택된 소스 레이어의 ID를 기준으로 관련 레이어의 피처를
-							찾아
-							색상별로 flash 처리하고,
-							End 키 단축키로 드래그 선택 도구를 켜고 끌 수 있도록 구현했습니다.
-						</div>
-						<br>
-						<h6>⛏ Skills</h6>
-						<hr>
-						<div class="modal-summary">
-							Python, PyQGIS, QGIS Plugin Builder, PyQt5, Qt Designer, QgsProject,
-							QgsVectorFileWriter,
-							QgsFeatureRequest, QgsRubberBand, QGIS Expression
-						</div>
-						<br>
-						<h6>⚙ Setup & Usage</h6>
-						<hr>
-						<div class="modal-summary">
-							<div class="setup-content">
-								git clone https://github.com/sujinbang/pyqgis.git<br>
-								cd pyqgis/qgis-plugin
-							</div>
-							<br>
-							<div class="setup-content">
-								C:\Users\사용자\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins
-							</div>
-							<br>
-							<div class="setup-content">
-								pyrcc5 resources.qrc -o resources.py
-							</div>
-							<br>
-							<div class="modal-summary">
-								QGIS 플러그인 폴더에 원하는 플러그인 디렉터리를 복사한 뒤 QGIS에서 플러그인을 활성화하여 사용합니다.
-							</div>
+							<span class="modal-highlight">1. 대규모 좌표 데이터의 선형 피처 변환 로직 최적화</span><br>
+							- 단순 좌표점 시퀀스를 연속된 선형(LineString) 피처로 변환하는 로직을 2가지 방식(GeoPandas 기반 벡터화 처리 vs. 순차적 순회)으로 구현 후 성능 비교를 거쳐 최적의 처리 방식 선택 적용
+							<br><br>
+							<span class="modal-highlight">2. QGIS Processing 커스텀 알고리즘 개발</span><br>
+							- QGIS Processing Toolbox에 기본 연동되는 커스텀 알고리즘(`QgsProcessingAlgorithm`)을 개발<br>
+							- 특정 거리값 기준 반경 내 포인트와 구간 데이터를 공간 매칭하여 추출하는 작업을 원클릭으로 자동화함으로써 분석 소요 시간 단축
+							<br><br>
+							<span class="modal-highlight">3. PyQt5 기반 검수용 QGIS 플러그인 4종 개발</span><br>
+							- Plugin Builder 기반 구조 및 테스트 코드 포함<br>
+							- <strong>apply_style:</strong> 복잡한 레이어 스타일 및 라벨 일괄 적용 자동화<br>
+							- <strong>save_attributes:</strong> 선택 레이어의 속성 테이블 데이터 CSV 추출/저장 자동화<br>
+							- <strong>export_geoquery:</strong> 특정 공간 질의(Expression)에 일치하는 피처만 별도 레이어/Shapefile로 추출<br>
+							- <strong>link_sync_flasher:</strong> 속성 ID를 기준으로 연관된 다중 레이어 간의 피처를 한 번에 찾아 시각적(Flasher)으로 연동 및 강조 표시 (End 키 단축키 바인딩 포함)
 						</div>
 					</div>
 					<button class="close-btn" onclick="closeModal('modal9')">닫기</button>
